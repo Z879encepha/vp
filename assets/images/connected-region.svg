@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Connected Throughout the Northeast</title>
+<desc id="desc">Illustrative regional connectivity from Village Pointe in North Edison through Edison Station and Metropark to New York City, Newark Liberty International Airport, Philadelphia, Washington DC, and broader connections toward Pittsburgh. Not to scale.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06243b"/><stop offset="0.58" stop-color="#0b3a5d"/><stop offset="1" stop-color="#082b45"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2c66b"/><stop offset="1" stop-color="#c88b25"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#000" flood-opacity=".23"/></filter>
+  <style>
+    .serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}
+    .heading{fill:#f8f2e8;font-size:55px;font-weight:700}.sub{fill:#dce8ef;font-size:21px}.label{fill:#fff;font-size:25px;font-weight:700}.small{fill:#d9e5ec;font-size:18px}.code{fill:#0a2a43;font-size:24px;font-weight:800;text-anchor:middle;dominant-baseline:middle}.line{fill:none;stroke:#dda943;stroke-width:7;stroke-linecap:round;stroke-dasharray:1 18}.decor{fill:none;stroke:#2d6281;stroke-width:2;opacity:.62}.node{fill:#f6f0e5}.city{fill:url(#gold)}
+  </style>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="28" y="28" width="1544" height="844" rx="44" fill="none" stroke="#1c5b80" stroke-width="2"/>
+<path class="decor" d="M52 620C300 250 520 250 810 490C1060 690 1300 535 1545 355"/>
+<path class="decor" d="M55 245C330 165 555 295 695 620"/>
+<path class="decor" d="M270 865C600 575 970 180 1540 95"/>
+<text x="92" y="118" class="serif heading">Connected Throughout the Northeast</text>
+<text x="94" y="160" class="sans sub">North Edison with regional connections to major cities, rail, road, and air.</text>
+<text x="94" y="190" class="sans sub">Illustrative only. Not to scale. Verify routes, schedules, and travel times.</text>
+<!-- network -->
+<path class="line" d="M205 690L505 570"/><path class="line" d="M505 570L825 375"/>
+<path class="line" d="M825 375L1260 170"/><path class="line" d="M825 375L1170 315"/>
+<path class="line" d="M825 375L1180 555"/><path class="line" d="M1180 555L1030 730"/>
+<path class="line" d="M1180 555L550 790"/>
+<!-- Village Pointe -->
+<circle cx="205" cy="690" r="54" class="city" filter="url(#shadow)"/><circle cx="205" cy="690" r="22" fill="#0a2942"/>
+<text x="205" y="770" class="sans label" text-anchor="middle">Village Pointe</text><text x="205" y="803" class="sans small" text-anchor="middle">North Edison</text>
+<!-- Edison -->
+<circle cx="505" cy="570" r="39" class="node" filter="url(#shadow)"/><text x="505" y="570" class="sans code">E</text>
+<text x="505" y="634" class="sans label" text-anchor="middle">Edison Station</text><text x="505" y="664" class="sans small" text-anchor="middle">NJ Transit Northeast Corridor</text>
+<!-- Metropark -->
+<circle cx="825" cy="375" r="39" class="node" filter="url(#shadow)"/><text x="825" y="375" class="sans code">M</text>
+<text x="825" y="440" class="sans label" text-anchor="middle">Metropark</text><text x="825" y="470" class="sans small" text-anchor="middle">NJ Transit and Amtrak</text>
+<!-- NYC -->
+<circle cx="1260" cy="170" r="43" class="city" filter="url(#shadow)"/><text x="1260" y="170" class="sans code">NYC</text>
+<text x="1320" y="165" class="sans label">New York City</text><text x="1320" y="197" class="sans small">Rail and road connection</text>
+<!-- EWR -->
+<circle cx="1170" cy="315" r="39" class="node" filter="url(#shadow)"/><text x="1170" y="315" class="sans code">EWR</text>
+<text x="1228" y="308" class="sans label">Newark Airport</text><text x="1228" y="340" class="sans small">International air access</text>
+<!-- Philadelphia -->
+<circle cx="1180" cy="555" r="43" class="city" filter="url(#shadow)"/><text x="1180" y="555" class="sans code">PHL</text>
+<text x="1240" y="550" class="sans label">Philadelphia</text><text x="1240" y="582" class="sans small">Rail and road connection</text>
+<!-- Washington -->
+<circle cx="1030" cy="730" r="39" class="node" filter="url(#shadow)"/><text x="1030" y="730" class="sans code">DC</text>
+<text x="1088" y="725" class="sans label">Washington, D.C.</text><text x="1088" y="757" class="sans small">Northeast Corridor connection</text>
+<!-- Pittsburgh -->
+<circle cx="550" cy="790" r="39" class="node" filter="url(#shadow)"/><text x="550" y="790" class="sans code">PIT</text>
+<text x="608" y="785" class="sans label">Pittsburgh</text><text x="608" y="817" class="sans small">Broader regional connection</text>
+</svg>
