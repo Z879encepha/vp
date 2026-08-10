@@ -616,3 +616,98 @@ input,select{border-color:rgba(25,61,50,.18)!important;background:#fffdf9!import
     flex-basis:88px;
   }
 }
+
+/* =========================================================
+   Resident Hub compact directory redesign, August 10 2026
+   ========================================================= */
+.resident-essential-section{padding-bottom:clamp(58px,6vw,88px)}
+.resident-essential-grid{display:grid;grid-template-columns:.9fr 1.12fr 1fr;gap:18px;align-items:stretch}
+.resident-essential-card{position:relative;min-width:0;padding:28px;background:#fff;border:1px solid rgba(25,61,50,.15);border-top:4px solid var(--forest);border-radius:12px;box-shadow:0 16px 38px rgba(25,61,50,.08);display:flex;flex-direction:column}
+.resident-essential-card.emergency-card{border-top-color:#A95A32}
+.resident-essential-card.real-estate-essential-card{border-top-color:var(--gold)}
+.resident-card-kicker{display:inline-flex;align-self:flex-start;margin-bottom:13px;padding:6px 9px;border-radius:5px;background:#F6ECD5;color:#7E591B;font-size:.64rem;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
+.resident-essential-card.emergency-card .resident-card-kicker{background:#F7E4DE;color:#8D3D2B}
+.resident-essential-card h3{font-size:clamp(1.7rem,2.15vw,2.25rem);margin-bottom:16px}
+.resident-hero-contact{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 16px;margin:2px 0 18px;border-radius:8px;background:var(--forest);color:#fff}
+.resident-hero-contact span{font-size:.68rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.resident-hero-contact strong{font-size:1.45rem}
+.resident-essential-sub,.resident-essential-block{display:grid;gap:7px;padding-top:16px;margin-top:auto;border-top:1px solid var(--line)}
+.resident-essential-block+.resident-essential-block{margin-top:15px}
+.resident-essential-sub strong,.resident-essential-block strong{font-size:.86rem;color:var(--ink)}
+.resident-essential-sub>a:not(.resident-card-link),.resident-essential-block>a,.resident-essential-block>div{color:var(--forest);font-weight:800;font-size:.9rem;overflow-wrap:anywhere}
+.resident-essential-block>span{color:var(--muted);font-size:.87rem}
+.resident-card-link{display:inline-flex;align-items:center;gap:6px;margin-top:4px;color:#1B6B60;font-size:.79rem;font-weight:800}
+.resident-card-link svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.resident-inline-label{display:inline-block;margin-right:7px;color:var(--muted);font-size:.66rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase}
+.resident-contact-separator{padding:0 5px;color:#9B8257}
+.resident-email-feature{display:inline-block;margin:4px 0 16px;color:#1B6B60;font-family:var(--serif);font-size:clamp(1.28rem,1.8vw,1.7rem);font-weight:700;overflow-wrap:anywhere}
+.resident-essential-note{margin-top:auto;padding-top:15px;border-top:1px solid var(--line);font-size:.75rem;line-height:1.55}
+
+.resident-directory-notice{margin:0 0 24px;padding:16px 18px;border-left:4px solid var(--gold);background:#F8F3E9;border-radius:0 8px 8px 0;color:#5E675F;font-size:.8rem}
+.resident-directory-notice strong{color:var(--ink)}
+.resident-master-controls{grid-template-columns:minmax(260px,1.5fr) minmax(170px,.75fr) minmax(180px,.8fr) auto}
+.resident-directory-group{margin-top:36px}
+.resident-directory-group:first-child{margin-top:22px}
+.resident-directory-group-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;padding-bottom:11px;border-bottom:2px solid rgba(25,61,50,.18)}
+.resident-directory-group-heading h3{font-size:clamp(1.7rem,2.4vw,2.35rem);margin:0;color:var(--forest)}
+.resident-directory-group-heading span{font-size:.72rem;font-weight:800;color:var(--muted);white-space:nowrap}
+.resident-table-wrap{overflow:hidden;border:1px solid rgba(25,61,50,.14);border-top:0;border-radius:0 0 10px 10px;background:#fff}
+.resident-directory-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.resident-directory-table th{padding:10px 13px;background:#F4F0E7;color:#6E614C;text-align:left;font-size:.64rem;letter-spacing:.09em;text-transform:uppercase}
+.resident-directory-table th:nth-child(1){width:24%}
+.resident-directory-table th:nth-child(2){width:33%}
+.resident-directory-table th:nth-child(3){width:23%}
+.resident-directory-table th:nth-child(4){width:20%}
+.resident-directory-table td{vertical-align:top;padding:13px;border-top:1px solid rgba(25,61,50,.11);font-size:.79rem}
+.resident-directory-table tbody tr:first-child td{border-top:0}
+.resident-directory-table tbody tr:hover{background:#FFFCF6}
+.resident-resource-title{display:block;font-family:var(--serif);font-size:1.05rem;line-height:1.1;color:var(--ink)}
+.resident-resource-type{display:block;margin-top:5px;color:#8A6A35;font-size:.58rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.resident-table-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:5px}
+.resident-table-tags span{padding:4px 6px;border-radius:5px;background:#E8F0EC;color:#245347;font-size:.61rem;font-weight:800}
+.resident-directory-table td p{margin:0;color:var(--muted);font-size:.76rem;line-height:1.45}
+.resident-directory-table td small{display:block;margin-top:5px;color:#7A786F;font-size:.66rem;line-height:1.45}
+.resident-contact-stack{display:grid;gap:5px}
+.resident-contact-link{display:grid;gap:1px;color:var(--forest);font-weight:780;overflow-wrap:anywhere}
+.resident-contact-link span{color:#7D7464;font-size:.56rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase}
+.resident-contact-emergency{color:#944733}
+.resident-contact-static{color:var(--muted);font-weight:600}
+.resident-contact-muted{color:var(--muted);font-size:.72rem}
+.resident-action-list{display:flex;flex-wrap:wrap;gap:6px}
+.resident-action{display:inline-flex;align-items:center;gap:5px;min-height:31px;padding:6px 8px;border:1px solid rgba(25,61,50,.16);border-radius:6px;background:#F7F4ED;color:var(--forest);font-size:.66rem;font-weight:800}
+.resident-action:hover,.resident-action:focus-visible{background:#E9F0EC}
+.resident-action svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+@media(max-width:1100px){
+  .resident-essential-grid{grid-template-columns:1fr 1fr}
+  .resident-essential-card.real-estate-essential-card{grid-column:1/-1}
+  .resident-master-controls{grid-template-columns:1fr 1fr}
+  .resident-master-controls .button{grid-column:1/-1}
+  .resident-directory-table th:nth-child(1){width:25%}
+  .resident-directory-table th:nth-child(2){width:30%}
+  .resident-directory-table th:nth-child(3){width:25%}
+  .resident-directory-table th:nth-child(4){width:20%}
+}
+@media(max-width:760px){
+  .resident-essential-grid{grid-template-columns:1fr}
+  .resident-essential-card.real-estate-essential-card{grid-column:auto}
+  .resident-master-controls{grid-template-columns:1fr}
+  .resident-master-controls .button{grid-column:auto}
+  .resident-table-wrap{overflow:visible;border:0;background:transparent}
+  .resident-directory-table,.resident-directory-table tbody,.resident-directory-table tr,.resident-directory-table td{display:block;width:100%}
+  .resident-directory-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .resident-directory-table tr{margin-top:10px;padding:12px 14px;background:#fff;border:1px solid rgba(25,61,50,.14);border-radius:9px}
+  .resident-directory-table td{display:grid;grid-template-columns:76px minmax(0,1fr);gap:8px;padding:7px 0;border:0}
+  .resident-directory-table td::before{content:attr(data-label);color:#7D7464;font-size:.57rem;font-weight:850;letter-spacing:.06em;text-transform:uppercase}
+  .resident-directory-table td>*{min-width:0}
+  .resident-directory-table td[data-label="Resource"]{padding-top:0}
+  .resident-directory-table td[data-label="Actions"]{padding-bottom:0}
+  .resident-action-list{align-items:flex-start}
+  .resident-directory-group-heading{align-items:center}
+}
+@media(max-width:480px){
+  .resident-essential-card{padding:22px}
+  .resident-directory-table td{grid-template-columns:68px minmax(0,1fr)}
+  .resident-action{padding:6px 7px}
+}
+

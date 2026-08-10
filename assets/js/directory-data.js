@@ -1,5 +1,146 @@
 window.VP_DIRECTORY_DATA = [
   {
+    "title": "Notary in VP - Heena",
+    "category": "Notary",
+    "type": "Village Pointe Curated",
+    "scope": "curated",
+    "residentCurated": true,
+    "priority": 1,
+    "phones": [
+      "732-649-6410"
+    ],
+    "phoneLabel": "Cell",
+    "whatsapp": "732-649-6410",
+    "sms": "732-649-6410",
+    "services": [
+      "Notary Public",
+      "Document Notarization"
+    ],
+    "description": "Notary service available within Village Pointe. Contact Heena directly for current availability and requirements.",
+    "caution": "Confirm current availability, fees, acceptable identification, document requirements, witness requirements when applicable, and whether the requested document can be notarized before arranging service.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "notary",
+      "notary public",
+      "notarization",
+      "notarize",
+      "documents",
+      "signature",
+      "Heena",
+      "Village Pointe",
+      "VP"
+    ]
+  },
+  {
+    "title": "Emergency 911",
+    "category": "Emergency & Safety",
+    "type": "Official public contact",
+    "scope": "official",
+    "priority": 1,
+    "phones": [
+      "911"
+    ],
+    "phoneLabel": "Emergency",
+    "services": [
+      "Police",
+      "Fire",
+      "Medical emergency"
+    ],
+    "description": "Call 911 for immediate danger or an urgent police, fire, or medical emergency.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "911",
+      "emergency",
+      "police",
+      "fire",
+      "medical",
+      "ambulance"
+    ]
+  },
+  {
+    "title": "Village Pointe Condominium Association",
+    "category": "Village Pointe & Management",
+    "type": "Village Pointe official contact",
+    "scope": "official",
+    "priority": 2,
+    "address": "45 Edinburgh Ct, Edison, NJ 08820",
+    "services": [
+      "Condominium Association",
+      "Village Pointe"
+    ],
+    "description": "Village Pointe Condominium Association contact reference.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "VPCA",
+      "Village Pointe Condo Association",
+      "Association",
+      "45 Edinburgh",
+      "condominium"
+    ]
+  },
+  {
+    "title": "Impac Property Management",
+    "category": "Village Pointe & Management",
+    "type": "Village Pointe official contact",
+    "scope": "official",
+    "priority": 2,
+    "phones": [
+      "732-548-0378"
+    ],
+    "phoneLabel": "On Site",
+    "emergencyPhones": [
+      "732-408-2525",
+      "800-624-4294"
+    ],
+    "emergencyPhoneLabel": "Management Emergency",
+    "email": "dpatel@impac1.com",
+    "officeHours": "Mon, Thu, Fri: 8 AM to 4 PM; Tuesday: 1 PM to 8 PM; Wednesday: Closed",
+    "services": [
+      "Property Management",
+      "Resident Contact",
+      "Management Emergency"
+    ],
+    "description": "Property management company serving Village Pointe.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "Impac",
+      "property management",
+      "management",
+      "maintenance",
+      "property manager",
+      "dpatel"
+    ]
+  },
+  {
+    "title": "Village Pointe Real Estate Interest",
+    "category": "Real Estate",
+    "type": "Public inquiry contact",
+    "scope": "curated",
+    "priority": 3,
+    "email": "village.pointe@gmail.com",
+    "services": [
+      "Buying",
+      "Selling",
+      "Renting",
+      "Investing"
+    ],
+    "description": "For general public inquiries about buying, selling, renting, or investing at Village Pointe.",
+    "caution": "Where appropriate, an inquiry may be forwarded to a licensed real estate professional or referral resource. Sending an inquiry does not create a brokerage, agency, fiduciary, confidential, exclusive, or other professional relationship.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "real estate",
+      "buy",
+      "buying",
+      "sell",
+      "selling",
+      "rent",
+      "renting",
+      "invest",
+      "investing",
+      "Village Pointe"
+    ]
+  },
+  {
     "title": "Edison Police Nonemergency Dispatch",
     "category": "Emergency & Safety",
     "type": "Official public contact",
