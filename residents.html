@@ -19,7 +19,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8271030626326251" crossorigin="anonymous"></script>
 <title>Village Pointe Resident Hub | Contacts, Services and Public Resources</title>
 <meta content="Village Pointe resident hub with emergency, Association, property management, notary, local service, Edison public, school, transportation, and everyday resource contacts." name="description"/>
-<link href="http://www.villagepointe.org/residents.html" rel="canonical" />
+<link href="https://www.villagepointe.org/residents.html" rel="canonical" />
 <meta content="Village Pointe Resident Hub | Contacts, Services and Public Resources" property="og:title"/>
 <meta content="Important Village Pointe contacts, resident supplied services, Edison public resources, and everyday information in one searchable resident hub." property="og:description"/>
 <meta content="website" property="og:type"/>
@@ -51,86 +51,79 @@
       <div class="kicker light">Village Pointe Residents</div>
       <h1>Resident Hub</h1>
       <p>Essential Village Pointe contacts, resident supplied help, Edison public resources, and everyday services in one searchable place.</p>
-      <div class="button-row">
-        <a class="button primary" href="#essential-contacts">Important Contacts</a>
-        <a class="button ghost" href="#resident-directory">Find a Contact</a>
-        <a class="button ghost" href="directory.html">Full Local Directory</a>
-      </div>
     </div>
   </div>
 </section>
 
-<section class="section resident-essential-section" id="essential-contacts">
+<section class="section resident-priority-section" id="emergency-safety">
   <div class="shell">
-    <div class="section-heading">
-      <div>
-        <div class="kicker">Start here</div>
-        <h2>Important contact information.</h2>
-      </div>
-      <p>For emergency, Association, management, or real estate inquiries, use the appropriate contact directly. Contact information can change, including when updated information is not publicly available or has not been brought to this site's attention.</p>
-    </div>
-    <div class="resident-essential-grid" data-resident-essential-cards></div>
+    <div class="resident-priority-heading"><div class="kicker">Start here</div><h2>Emergency &amp; Safety</h2></div>
+    <div class="resident-priority-panel" data-resident-emergency></div>
   </div>
 </section>
 
-<section class="section alt-section" id="resident-directory">
+<section class="section alt-section resident-priority-section" id="vp-management">
+  <div class="shell">
+    <div class="resident-priority-heading"><div class="kicker">Village Pointe</div><h2>Village Pointe &amp; Management</h2></div>
+    <div class="resident-management-panel" data-resident-management></div>
+  </div>
+</section>
+
+<section class="section resident-priority-section" id="notary">
+  <div class="shell">
+    <div class="resident-priority-heading"><div class="kicker">Resident Service</div><h2>Notary</h2></div>
+    <div class="resident-notary-panel" data-resident-notary></div>
+  </div>
+</section>
+
+<section class="section alt-section" id="find-resources">
   <div class="shell">
     <div class="section-heading">
-      <div>
-        <div class="kicker">Resident Quick Directory</div>
-        <h2>Find a contact or resource.</h2>
-      </div>
-      <p>Search Village Pointe contacts, resident supplied service contacts, Edison public agencies, schools, transportation, consumer resources, and broader local services.</p>
+      <div><div class="kicker">Find a Contact or Resource</div><h2>Search the Resident Hub.</h2></div>
     </div>
-
-    <div class="resident-directory-notice" role="note">
-      <strong>Directory note:</strong>
-      Resident supplied contacts are provided for convenience. Verify identity, credentials, licensing when required, insurance, scope, pricing, availability, and current information directly before relying on a listing.
-    </div>
-
-    <form class="directory-controls resident-master-controls" data-resident-directory-form>
-      <label>
-        <span>Search</span>
-        <input data-resident-directory-search type="search" placeholder="Try notary, plumber, police, school, MVC, airport..."/>
-      </label>
-      <label>
-        <span>Category</span>
-        <select data-resident-directory-category>
-          <option value="All">All categories</option>
-        </select>
-      </label>
-      <label>
-        <span>Resources</span>
-        <select data-resident-directory-scope>
-          <option value="All">All resources</option>
-          <option value="resident">Village Pointe & resident</option>
-          <option value="official">Official public resources</option>
-          <option value="area">Area searches</option>
-        </select>
-      </label>
+    <form class="directory-controls resident-master-controls" onsubmit="return false;">
+      <label><span>Search</span><input data-resident-directory-search type="search" placeholder="Try plumber, electrician, school, MVC, airport..."/></label>
+      <label><span>Category</span><select data-resident-directory-category><option value="All">All categories</option></select></label>
+      <label><span>Resources</span><select data-resident-directory-scope>
+        <option value="All">All resources</option>
+        <option value="resident">Village Pointe &amp; resident</option>
+        <option value="official">Official public resources</option>
+        <option value="area">Area searches</option>
+      </select></label>
       <button class="button secondary" data-resident-directory-clear type="button">Clear</button>
     </form>
-
-    <div aria-live="polite" class="directory-summary">
-      <strong data-resident-directory-count>0</strong> resources shown
-    </div>
-
-    <div data-resident-directory-results></div>
-    <noscript><div class="notice">JavaScript is required to display and filter the resident directory.</div></noscript>
+    <div aria-live="polite" class="directory-summary"><strong data-resident-directory-count>0</strong> listed resources shown</div>
   </div>
 </section>
 
-<section class="section dark-section">
-  <div class="shell closing-split">
-    <div>
-      <div class="kicker gold">More than resident contacts</div>
-      <h2>Explore the wider information directory.</h2>
-      <p>Use the full directory for additional Edison, New Jersey, transportation, travel, government, consumer, and regional resources.</p>
+<section class="section" id="resident-supplied">
+  <div class="shell">
+    <div class="section-heading">
+      <div><div class="kicker">Resident Supplied Contacts</div><h2>Local help used and shared by residents.</h2></div>
+      <p>Verify identity, credentials, licensing when required, insurance, scope, pricing, and availability directly before hiring.</p>
     </div>
-    <div class="button-row">
-      <a class="button primary" href="directory.html">Open Full Directory</a>
-      <a class="button outline" href="resources.html">Public Resources</a>
-    </div>
+    <div data-resident-supplied-results></div>
+  </div>
+</section>
+
+<section class="section alt-section" id="real-estate-interest">
+  <div class="shell">
+    <div class="section-heading"><div><div class="kicker">Real Estate Interest</div><h2>Village Pointe real estate inquiries.</h2></div></div>
+    <div data-real-estate-results></div>
+  </div>
+</section>
+
+<section class="section" id="public-resources">
+  <div class="shell">
+    <div class="section-heading"><div><div class="kicker">Edison &amp; Public Resources</div><h2>Township, schools, transportation and consumer resources.</h2></div></div>
+    <div data-public-resource-results></div>
+  </div>
+</section>
+
+<section class="section alt-section" id="other-resources">
+  <div class="shell">
+    <div class="section-heading"><div><div class="kicker">More Local &amp; Regional Resources</div><h2>Additional everyday services and regional information.</h2></div></div>
+    <div data-other-resource-results></div>
   </div>
 </section>
 </main>

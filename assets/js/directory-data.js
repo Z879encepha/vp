@@ -1,6 +1,6 @@
 window.VP_DIRECTORY_DATA = [
   {
-    "title": "Notary in VP - Heena",
+    "title": "Notary Public in VP",
     "category": "Notary",
     "type": "Village Pointe Curated",
     "scope": "curated",
@@ -16,7 +16,7 @@ window.VP_DIRECTORY_DATA = [
       "Notary Public",
       "Document Notarization"
     ],
-    "description": "Notary service available within Village Pointe. Contact Heena directly for current availability and requirements.",
+    "description": "Contact directly for current availability and requirements.",
     "caution": "Confirm current availability, fees, acceptable identification, document requirements, witness requirements when applicable, and whether the requested document can be notarized before arranging service.",
     "lastReviewed": "August 2026",
     "searchTerms": [
@@ -58,7 +58,7 @@ window.VP_DIRECTORY_DATA = [
     ]
   },
   {
-    "title": "Village Pointe Condominium Association",
+    "title": "VPCA - Village Pointe Condominium Association",
     "category": "Village Pointe & Management",
     "type": "Village Pointe official contact",
     "scope": "official",
@@ -68,7 +68,7 @@ window.VP_DIRECTORY_DATA = [
       "Condominium Association",
       "Village Pointe"
     ],
-    "description": "Village Pointe Condominium Association contact reference.",
+    "description": "",
     "lastReviewed": "August 2026",
     "searchTerms": [
       "VPCA",
@@ -79,9 +79,9 @@ window.VP_DIRECTORY_DATA = [
     ]
   },
   {
-    "title": "Impac Property Management",
+    "title": "Village Pointe Site Property Manager",
     "category": "Village Pointe & Management",
-    "type": "Village Pointe official contact",
+    "type": "Village Pointe management contact",
     "scope": "official",
     "priority": 2,
     "phones": [
@@ -100,15 +100,32 @@ window.VP_DIRECTORY_DATA = [
       "Resident Contact",
       "Management Emergency"
     ],
-    "description": "Property management company serving Village Pointe.",
+    "description": "",
     "lastReviewed": "August 2026",
     "searchTerms": [
-      "Impac",
       "property management",
       "management",
       "maintenance",
       "property manager",
+      "site property manager",
       "dpatel"
+    ]
+  },
+  {
+    "title": "Impac Property Management",
+    "category": "Village Pointe & Management",
+    "type": "Property Management Company",
+    "scope": "official",
+    "priority": 3,
+    "services": [
+      "Property Management Company"
+    ],
+    "description": "Property Management Company serving Village Pointe.",
+    "lastReviewed": "August 2026",
+    "searchTerms": [
+      "Impac",
+      "property management company",
+      "management company"
     ]
   },
   {
@@ -1063,6 +1080,7 @@ window.VP_DIRECTORY_DATA = [
     "url": "https://www.edisonnj.gov/departments/fire_division/index.php",
     "label": "Open official page",
     "scope": "official",
+    "residentHidden": true,
     "priority": 20,
     "services": [],
     "searchTerms": []
@@ -1075,6 +1093,7 @@ window.VP_DIRECTORY_DATA = [
     "url": "https://www.nj.gov/njoem/plan/nj211assist.html",
     "label": "Open NJ 211 information",
     "scope": "official",
+    "residentHidden": true,
     "priority": 20,
     "services": [],
     "searchTerms": []
