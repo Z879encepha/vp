@@ -29,6 +29,8 @@
       <div class="directory-category">${escapeHtml(item.category)}</div>
       ${tags?`<div class="service-tags">${tags}</div>`:''}
       <p>${escapeHtml(item.description)}</p>
+      ${item.address?`<p class="directory-meta"><strong>Address:</strong> ${escapeHtml(item.address)}</p>`:''}
+      ${item.officeHours?`<p class="directory-meta"><strong>Hours:</strong> ${escapeHtml(item.officeHours)}</p>`:''}
       ${(phones||emergencyPhones||email||whatsapp||sms)?`<div class="phone-list">${phones}${emergencyPhones}${email}${whatsapp}${sms}</div>`:''}
       ${external}
       ${caution}
