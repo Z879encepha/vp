@@ -678,3 +678,137 @@ input,select{border-color:rgba(25,61,50,.18)!important;background:#fffdf9!import
 @media(max-width:980px){.resident-management-panel{grid-template-columns:1fr 1fr}.resident-company-block{grid-column:1/-1;border-left:0!important;border-top:1px solid rgba(25,61,50,.12)}.resident-master-controls{grid-template-columns:1fr 1fr}.resident-master-controls .button{grid-column:1/-1}.resident-notary-panel{align-items:flex-start;flex-wrap:wrap}.resident-notary-panel>small{max-width:none;width:100%}}
 @media(max-width:760px){.resident-priority-row{grid-template-columns:1fr;gap:7px;padding:14px 16px}.resident-priority-actions{justify-content:flex-start;gap:12px}.resident-management-panel{grid-template-columns:1fr}.resident-management-block+.resident-management-block{border-left:0;border-top:1px solid rgba(25,61,50,.12)}.resident-company-block{grid-column:auto}.resident-notary-panel{display:grid;gap:12px;padding:16px}.resident-master-controls{grid-template-columns:1fr}.resident-master-controls .button{grid-column:auto}.resident-table-wrap{overflow:visible;border:0;background:transparent}.resident-directory-table,.resident-directory-table tbody,.resident-directory-table tr,.resident-directory-table td{display:block;width:100%}.resident-directory-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.resident-directory-table tr{margin-top:9px;padding:11px 13px;background:#fff;border:1px solid rgba(25,61,50,.14);border-radius:9px}.resident-directory-table td{display:grid;grid-template-columns:70px minmax(0,1fr);gap:7px;padding:6px 0;border:0}.resident-directory-table td::before{content:attr(data-label);color:#7D7464;font-size:.54rem;font-weight:850;letter-spacing:.05em;text-transform:uppercase}.resident-directory-table td>*{min-width:0}.resident-directory-table td[data-label="Contact"]:first-child{padding-top:0}.resident-directory-table td[data-label="Actions"]{padding-bottom:0}.resident-directory-group-heading{align-items:center}}
 @media(max-width:480px){.resident-management-block{padding:16px}.resident-management-block>a{grid-template-columns:62px minmax(0,1fr)}.resident-notary-actions{gap:5px}.resident-directory-table td{grid-template-columns:64px minmax(0,1fr)}.resident-action{padding:6px 7px}}
+
+/* =========================================================
+   Resident directory mobile compacting
+   ========================================================= */
+@media (max-width:760px){
+
+  /* Main directory rows become compact contact cards, not miniature tables. */
+  .resident-directory-table tr{
+    padding:14px 16px;
+    margin-top:10px;
+  }
+
+  .resident-directory-table td{
+    display:block;
+    padding:0;
+    margin:0;
+  }
+
+  .resident-directory-table td::before{
+    content:none !important;
+    display:none !important;
+  }
+
+  /* Contact name first and prominent. */
+  .resident-directory-table td[data-label="Contact"]:first-child{
+    margin-bottom:7px;
+  }
+
+  .resident-resource-title{
+    font-size:1.16rem;
+    line-height:1.18;
+  }
+
+  /* "Village Pointe Curated" and other type badges add clutter on phones. */
+  .resident-resource-type{
+    display:none;
+  }
+
+  /* Services remain useful, but generic descriptions do not need repeating. */
+  .resident-directory-table td[data-label="Services"]{
+    margin-bottom:8px;
+  }
+
+  .resident-table-tags{
+    margin:0;
+    gap:5px;
+  }
+
+  .resident-directory-table td[data-label="Services"] p,
+  .resident-directory-table td[data-label="Services"] small{
+    display:none;
+  }
+
+  /* Phone/email area sits naturally below services. */
+  .resident-directory-table td[data-label="Contact"]:not(:first-child){
+    margin-top:4px;
+  }
+
+  .resident-contact-stack{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:7px 14px;
+  }
+
+  .resident-contact-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:.92rem;
+  }
+
+  .resident-contact-link span{
+    display:none;
+  }
+
+  .resident-contact-static{
+    display:block;
+    width:100%;
+    font-size:.78rem;
+  }
+
+  /* Actions sit on the same visual line and stay compact. */
+  .resident-directory-table td[data-label="Actions"]{
+    margin-top:8px;
+  }
+
+  .resident-action-list{
+    gap:7px;
+  }
+
+  .resident-action{
+    min-height:34px;
+    padding:7px 10px;
+    font-size:.72rem;
+  }
+
+  /* Category heading remains the visual organizer. */
+  .resident-directory-group{
+    margin-top:28px;
+  }
+
+  .resident-directory-group-heading{
+    padding-bottom:8px;
+  }
+
+  .resident-directory-group-heading h3{
+    font-size:1.8rem;
+  }
+}
+
+@media (max-width:480px){
+  .resident-directory-table tr{
+    padding:13px 14px;
+  }
+
+  .resident-resource-title{
+    font-size:1.12rem;
+  }
+
+  .resident-table-tags span{
+    font-size:.62rem;
+    padding:4px 6px;
+  }
+
+  .resident-contact-link{
+    font-size:.9rem;
+  }
+
+  .resident-action{
+    padding:7px 9px;
+  }
+}
+

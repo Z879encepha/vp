@@ -13,16 +13,15 @@
   const otherResults=document.querySelector('[data-other-resource-results]');
   const emergency=document.querySelector('[data-resident-emergency]');
   const management=document.querySelector('[data-resident-management]');
-  const notary=document.querySelector('[data-resident-notary]');
 
   if(!search||!categorySelect||!scopeSelect||!clear||!count||
      !residentResults||!realEstateResults||!publicResults||!otherResults||
-     !emergency||!management||!notary)return;
+     !emergency||!management)return;
 
-  const residentCategories=['Handyman','Plumbing','Electrical','HVAC & Appliances','Garage & Locksmith','Cleaning'];
+  const residentCategories=['Notary','Handyman','Plumbing','Electrical','HVAC & Appliances','Garage & Locksmith','Cleaning'];
   const publicCategories=['Government','Schools & Family','Transportation','Consumer Verification'];
   const otherCategories=['Home Services','Auto & Mobility','Health & Wellness','Shopping & Dining','Pets','Transportation & Travel'];
-  const categoryOrder=['Notary',...residentCategories,'Real Estate','Village Pointe & Management','Emergency & Safety',...publicCategories,...otherCategories];
+  const categoryOrder=[...residentCategories,'Real Estate','Village Pointe & Management','Emergency & Safety',...publicCategories,...otherCategories];
   const discovered=Array.from(new Set(data.map(item=>item.category).filter(Boolean)));
   const categories=[...categoryOrder.filter(c=>discovered.includes(c)),...discovered.filter(c=>!categoryOrder.includes(c)).sort((a,b)=>a.localeCompare(b))];
 
@@ -90,20 +89,6 @@
         <span>Property Management Company</span>
         <strong>${escapeHtml(company?.title||'Impac Property Management')}</strong>
       </div>`;
-
-    const n=find('Notary Public in VP');
-    const number=n?.phones?.[0]||'732-649-6410';
-    notary.innerHTML=`
-      <div class="resident-notary-main">
-        <strong>Notary Public in VP</strong>
-        <a href="${phoneHref(number)}">${escapeHtml(number)}</a>
-      </div>
-      <div class="resident-notary-actions">
-        <a class="resident-action" href="${phoneHref(number)}">${phoneIcon()}<span>Call</span></a>
-        <a class="resident-action" href="${smsHref(n?.sms||number)}">${smsIcon()}<span>Text</span></a>
-        <a class="resident-action" href="${whatsappHref(n?.whatsapp||number)}" target="_blank" rel="noopener">${whatsappIcon()}<span>WhatsApp</span></a>
-      </div>
-      <small>Contact directly for availability and requirements.</small>`;
   }
 
   function searchableText(item){

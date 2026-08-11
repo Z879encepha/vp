@@ -16,7 +16,7 @@ window.VP_DIRECTORY_DATA = [
       "Notary Public",
       "Document Notarization"
     ],
-    "description": "Contact directly for current availability and requirements.",
+    "description": "Resident supplied contact for notary public and document notarization.",
     "caution": "Confirm current availability, fees, acceptable identification, document requirements, witness requirements when applicable, and whether the requested document can be notarized before arranging service.",
     "lastReviewed": "August 2026",
     "searchTerms": [
@@ -327,7 +327,7 @@ window.VP_DIRECTORY_DATA = [
     "services": [
       "General handyman"
     ],
-    "description": "Resident supplied contact for general handyman. User supplied note: $50 per hour through Thumbtack. Confirm current pricing directly.",
+    "description": "Resident supplied contact for general handyman.",
     "caution": "Verify identity, experience, insurance, licensing when required, scope, pricing, and availability before hiring.",
     "lastReviewed": "August 2026",
     "searchTerms": [
