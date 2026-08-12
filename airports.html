@@ -1,115 +1,492 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="light" name="color-scheme"/>
-<meta content="#193D32" name="theme-color"/>
-<meta content="index,follow" name="robots"/>
-<!-- 1. Google Scripts (Clean ASCII Spaces) -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Airports from North Edison | Village Pointe</title>
+<meta name="description" content="Explore seven airports within reach of North Edison, including EWR, JFK, LGA, PHL, TTN, TEB and SWF, with distance context and official airport links."/>
+<link rel="canonical" href="http://www.villagepointe.org/airports.html"/>
+<meta property="og:title" content="Airports from North Edison | Village Pointe"/>
+<meta property="og:description" content="Seven regional airport options from North Edison, with an illustrated distance map and direct links to official airport resources."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.villagepointe.org/airports.html"/>
+<meta property="og:image" content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="apple-touch-icon" href="assets/images/icon-192.png"/>
+<link rel="manifest" href="site.webmanifest"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/site.css"/>
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YK50PPQBZ4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-YK50PPQBZ4');
 </script>
+
+<!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8271030626326251" crossorigin="anonymous"></script>
-<title>Airports Near Village Pointe | North Edison Regional Airport Guide</title>
-<meta content="Official airport links and planning resources for major international, regional, and business aviation airports serving the wider North Edison, New Jersey region." name="description"/>
-<link href="http://www.villagepointe.org/airports.html" rel="canonical" />
-<meta content="Airports Near Village Pointe | North Edison Regional Airport Guide" property="og:title"/>
-<meta content="Explore official resources for airports serving North Edison, New Jersey, New York, Philadelphia, and the wider region." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="http://www.villagepointe.org/airports.html" property="og:url"/>
-<meta content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<link href="favicon.ico" rel="icon"/>
-<link href="assets/images/icon-192.png" rel="apple-touch-icon"/>
-<link href="site.webmanifest" rel="manifest"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/site.css" rel="stylesheet"/>
+
+<style>
+  .airport-map-wrap {
+    margin: 0;
+  }
+
+  .airport-map-frame {
+    background: #071725;
+    border: 1px solid rgba(179, 136, 63, .36);
+    box-shadow: 0 24px 60px rgba(5, 20, 31, .16);
+    overflow: hidden;
+  }
+
+  .airport-map-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .airport-map-wrap figcaption {
+    max-width: 980px;
+    margin: 14px auto 0;
+    color: #5d665f;
+    font-size: .9rem;
+    line-height: 1.65;
+    text-align: center;
+  }
+
+  .airport-overview {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .airport-overview .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .airport-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .airport-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid rgba(22, 56, 45, .12);
+    box-shadow: 0 16px 38px rgba(13, 37, 30, .07);
+  }
+
+  .airport-card.primary-airport {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #102d27 0%, #173b33 100%);
+    color: #fff;
+    border-color: rgba(201, 162, 88, .34);
+  }
+
+  .airport-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  .airport-code {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2.15rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .04em;
+    color: #9b7132;
+  }
+
+  .primary-airport .airport-code {
+    color: #ddb86e;
+  }
+
+  .airport-distance {
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    border: 1px solid rgba(155, 113, 50, .34);
+    color: #775522;
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .primary-airport .airport-distance {
+    border-color: rgba(221, 184, 110, .46);
+    color: #f0d9a8;
+  }
+
+  .airport-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .airport-card p {
+    margin-top: 0;
+  }
+
+  .airport-card .text-link {
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  .primary-airport .text-link {
+    color: #f0d9a8;
+  }
+
+  .airport-use-note {
+    margin-top: 12px;
+    color: #667169;
+    font-size: .9rem;
+  }
+
+  .primary-airport .airport-use-note {
+    color: rgba(255,255,255,.72);
+  }
+
+  .airport-distance-note {
+    padding: 24px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .airport-distance-note p:last-child {
+    margin-bottom: 0;
+  }
+
+  .airport-closing-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .airport-closing-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .airport-closing-points div {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .airport-closing-points strong {
+    display: block;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .airport-closing-points span {
+    color: rgba(255,255,255,.76);
+    font-size: .88rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 980px) {
+    .airport-summary-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .airport-card.primary-airport {
+      grid-column: span 2;
+    }
+
+    .airport-closing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .airport-summary-grid,
+    .airport-closing-points {
+      grid-template-columns: 1fr;
+    }
+
+    .airport-card.primary-airport {
+      grid-column: auto;
+    }
+
+    .airport-card {
+      padding: 22px;
+    }
+
+    .airport-card-top {
+      gap: 12px;
+    }
+
+    .airport-code {
+      font-size: 1.9rem;
+    }
+
+    .airport-distance {
+      font-size: .7rem;
+    }
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<div aria-label="Featured site announcement" class="status-strip">
-<div class="shell status-strip-inner"><a class="status-strip-link" href="index.html">Connected Beyond Edison: Explore New Jersey, New York, Philadelphia and More</a></div>
+
+<div class="status-strip" aria-label="Featured site announcement">
+  <div class="shell status-strip-inner">
+    <a class="status-strip-link" href="airports.html">Connected Beyond Edison: Explore Airports, New York, Philadelphia and the Northeast.</a>
+  </div>
 </div>
 <div class="mosaic-band" aria-hidden="true"></div>
+
 <header class="site-header" data-header="">
-<div class="shell header-inner">
-<a aria-label="Village Pointe site home" class="brand" href="index.html">
-<span class="brand-logo"><img alt="" src="assets/images/village-pointe-logo.png"/></span>
-<span class="brand-copy"><span class="brand-name">Village Pointe</span><span class="brand-sub">Edison &amp; Beyond</span></span>
-</a>
-<button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" data-menu-toggle="" type="button"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
-<nav aria-label="Primary navigation" class="primary-nav" data-primary-nav="" id="primary-navigation">
-<a class="nav-link" href="index.html">Home</a>
-<div class="nav-group">
-<button aria-expanded="false" class="nav-link nav-group-toggle is-active" type="button">Explore <span aria-hidden="true">⌄</span></button>
-<div class="nav-menu">
-<a href="community.html">Community</a>
-<a href="location.html">Location &amp; Access</a>
-<a aria-current="page" href="airports.html">Airports</a>
-<a href="homes.html">Homes &amp; Layouts</a>
-<a href="gallery.html">Views &amp; Beyond</a>
-</div>
-</div>
-<div class="nav-group">
-<button aria-expanded="false" class="nav-link nav-group-toggle" type="button">Residents <span aria-hidden="true">⌄</span></button>
-<div class="nav-menu">
-<a href="residents.html">Resident Hub</a>
-<a href="directory.html">Local Services</a>
-<a href="resources.html">Public Resources</a>
-</div>
-</div>
-<a class="nav-link" href="about.html">About</a>
-<a class="nav-link" href="contact.html">Contact</a>
-<a class="nav-notice" href="legal.html">Legal</a>
-</nav>
-</div>
-</header><main id="main-content"><section class="page-hero airport-page-hero" style="--page-image:url('assets/images/hero-walkway.webp')"><div class="shell"><div class="page-hero-copy"><div class="kicker light">Connected Living</div><h1>Airports across the region.</h1><p>Village Pointe in North Edison sits within reach of major international gateways, regional airports, and business aviation options across New Jersey, New York, and Philadelphia.</p></div></div></section>
-<section class="section"><div class="shell split-large"><div><div class="kicker">A wider choice of gateways</div><h2>Plan by destination, airline, schedule, and convenience.</h2><p class="lead">No single airport is best for every trip. Flight schedules, fares, traffic, parking, ground transportation, and airline service can make different airports useful at different times.</p><p>This guide links directly to official airport or government sources. Always verify current flights, terminal information, road conditions, parking, and travel time before departure.</p><div class="button-row"><a class="button primary dark" href="location.html">Regional Access</a><a class="button secondary" href="directory.html?q=airport">Search Airport Resources</a></div></div><div class="map-frame light-map"><img alt="Illustrative Northeast connectivity diagram from Village Pointe" src="assets/images/connected-region.svg"/></div></div></section>
-<section class="section alt-section"><div class="shell"><div class="section-heading"><div><div class="kicker">Major international gateways</div><h2>Four major airports anchor the regional network.</h2></div><p>Use the official airport sites for live flight, terminal, parking, accessibility, and transportation information.</p></div><div class="airport-grid">
-<article class="airport-card"><div class="airport-code">EWR</div><div class="listing-badge official">Official Airport</div><h3>Newark Liberty International Airport</h3><p>Major international airport serving the New Jersey and New York region.</p><a class="text-link" href="https://www.newarkairport.com/" rel="noopener" target="_blank">Open official EWR site <span aria-hidden="true">↗</span></a></article>
-<article class="airport-card"><div class="airport-code">JFK</div><div class="listing-badge official">Official Airport</div><h3>John F. Kennedy International Airport</h3><p>Major international gateway in New York City with extensive domestic and international service.</p><a class="text-link" href="https://www.jfkairport.com/" rel="noopener" target="_blank">Open official JFK site <span aria-hidden="true">↗</span></a></article>
-<article class="airport-card"><div class="airport-code">LGA</div><div class="listing-badge official">Official Airport</div><h3>LaGuardia Airport</h3><p>Major New York City commercial airport and an additional option for regional travel planning.</p><a class="text-link" href="https://www.laguardiaairport.com/" rel="noopener" target="_blank">Open official LGA site <span aria-hidden="true">↗</span></a></article>
-<article class="airport-card"><div class="airport-code">PHL</div><div class="listing-badge official">Official Airport</div><h3>Philadelphia International Airport</h3><p>Major airport serving Philadelphia and the surrounding region, with domestic and international service.</p><a class="text-link" href="https://www.phl.org/" rel="noopener" target="_blank">Open official PHL site <span aria-hidden="true">↗</span></a></article>
-</div></div></section>
-<section class="section"><div class="shell"><div class="section-heading"><div><div class="kicker">Additional options</div><h2>Regional and business aviation can widen the choices.</h2></div><p>These airports may be useful depending on airline service, destination, aircraft type, and trip requirements.</p></div><div class="airport-grid three">
-<article class="airport-card"><div class="airport-code">TTN</div><div class="listing-badge official">County Airport</div><h3>Trenton Mercer Airport</h3><p>Mercer County airport serving the central New Jersey region.</p><a class="text-link" href="https://www.mercercounty.org/departments/transportation-and-infrastructure/trenton-mercer-airport/" rel="noopener" target="_blank">Open Mercer County airport page <span aria-hidden="true">↗</span></a></article>
-<article class="airport-card"><div class="airport-code">SWF</div><div class="listing-badge official">Official Airport</div><h3>New York Stewart International Airport</h3><p>Port Authority airport in the Hudson Valley and another regional commercial aviation option.</p><a class="text-link" href="https://www.swfny.com/" rel="noopener" target="_blank">Open official SWF site <span aria-hidden="true">↗</span></a></article>
-<article class="airport-card"><div class="airport-code">TEB</div><div class="listing-badge official">Business Aviation</div><h3>Teterboro Airport</h3><p>General aviation reliever airport in Bergen County, New Jersey, primarily serving business and private aircraft operations.</p><a class="text-link" href="https://www.panynj.gov/airports/en/index.html" rel="noopener" target="_blank">Open Port Authority airports page <span aria-hidden="true">↗</span></a></article>
-</div></div></section>
-<section class="section dark-section"><div class="shell closing-split"><div><div class="kicker gold">Plan with current information</div><h2>Airport choice is only one part of the trip.</h2><p>Check live airline schedules, terminal details, traffic, tolls, parking, public transportation, security requirements, and weather with the appropriate official source before travel.</p></div><div class="button-row"><a class="button outline" href="location.html">Explore Regional Access</a><a class="button outline" href="resources.html">Public Resources</a></div></div></section></main>
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Village Pointe site home">
+      <span class="brand-logo"><img src="assets/images/village-pointe-logo.png" alt=""/></span>
+      <span class="brand-copy"><span class="brand-name">Village Pointe</span><span class="brand-sub">Edison &amp; Beyond</span></span>
+    </a>
+
+    <button class="menu-toggle" data-menu-toggle="" type="button" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" data-primary-nav="" id="primary-navigation" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle is-active" type="button" aria-expanded="false">Explore <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="community.html">Community</a>
+          <a href="location.html">Location &amp; Access</a>
+          <a class="is-active" aria-current="page" href="airports.html">Airports</a>
+          <a href="homes.html">Homes &amp; Layouts</a>
+          <a href="gallery.html">Views &amp; Beyond</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle" type="button" aria-expanded="false">Residents <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="residents.html">Resident Hub</a>
+          <a href="directory.html">Local Services</a>
+          <a href="resources.html">Public Resources</a>
+        </div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-notice" href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero" style="--page-image:url('assets/images/hero-walkway.webp')">
+    <div class="shell">
+      <div class="page-hero-copy">
+        <div class="kicker light">Airports &amp; Regional Access</div>
+        <h1>Seven airports. One exceptionally connected location.</h1>
+        <p>North Edison sits within reach of major New York and Philadelphia airports, regional passenger alternatives, and one of the country's best-known business aviation gateways.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="airport-overview">
+        <div class="kicker">North Edison to the Region</div>
+        <h2>Air access in almost every direction.</h2>
+        <p class="lead">For residents and visitors, Newark is the natural primary airport. But North Edison also benefits from practical access to JFK, LaGuardia, Philadelphia, Trenton-Mercer, Teterboro and New York Stewart, creating an unusually broad set of aviation options within the surrounding region.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="airport-map-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Regional Airport Map</div>
+          <h2 id="airport-map-heading">From North Edison to seven airport options.</h2>
+        </div>
+        <p>The map provides geographic context using approximate direct distances from North Edison. Actual road mileage and travel time depend on route, traffic, construction, weather and time of day.</p>
+      </div>
+
+      <figure class="airport-map-wrap">
+        <div class="airport-map-frame">
+          <img src="images/nj-edison-regional-airports.webp"
+               alt="Regional map showing approximate direct distances from North Edison to Newark Liberty, JFK, LaGuardia, Philadelphia, Trenton-Mercer, Teterboro and New York Stewart airports"
+               width="1672" height="941" decoding="async" fetchpriority="high"/>
+        </div>
+        <figcaption>Approximate direct distances shown: EWR 13 miles, TEB 25 miles, LGA 29 miles, JFK 31 miles, TTN 31 miles, SWF 66 miles and PHL 67 miles. These are geographic reference distances, not driving mileage.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="airport-guide-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Airport Guide</div>
+          <h2 id="airport-guide-heading">The seven airports at a glance.</h2>
+        </div>
+        <p>Airport roles differ considerably. Some are major commercial hubs, some offer more limited passenger service, and Teterboro primarily serves general and business aviation.</p>
+      </div>
+
+      <div class="airport-summary-grid">
+        <article class="airport-card primary-airport">
+          <div class="airport-card-top">
+            <div class="airport-code">EWR</div>
+            <div class="airport-distance">Approx. 13 direct miles</div>
+          </div>
+          <h3>Newark Liberty International Airport</h3>
+          <p>North Edison's primary major airport and the most convenient starting point for a wide range of domestic and international travel. Its New Jersey location makes it the natural first airport to check for most trips.</p>
+          <p class="airport-use-note">Major commercial and international airport.</p>
+          <a class="text-link light-link" href="https://www.newarkairport.com/" target="_blank" rel="noopener noreferrer">Official EWR website <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">JFK</div>
+            <div class="airport-distance">Approx. 31 direct miles</div>
+          </div>
+          <h3>John F. Kennedy International Airport</h3>
+          <p>A major international gateway in Queens with extensive long-haul and global airline service. It can be especially useful when a desired international itinerary is unavailable or less practical from Newark.</p>
+          <p class="airport-use-note">Major commercial and international airport.</p>
+          <a class="text-link" href="https://www.jfkairport.com/" target="_blank" rel="noopener noreferrer">Official JFK website <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">LGA</div>
+            <div class="airport-distance">Approx. 29 direct miles</div>
+          </div>
+          <h3>LaGuardia Airport</h3>
+          <p>A major New York City airport focused heavily on domestic and shorter-haul passenger travel. Depending on airline, schedule and destination, LaGuardia can provide useful alternatives to Newark.</p>
+          <p class="airport-use-note">Major commercial passenger airport.</p>
+          <a class="text-link" href="https://www.laguardiaairport.com/" target="_blank" rel="noopener noreferrer">Official LGA website <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">PHL</div>
+            <div class="airport-distance">Approx. 67 direct miles</div>
+          </div>
+          <h3>Philadelphia International Airport</h3>
+          <p>A full-scale international airport serving the Philadelphia region. For certain routes, fares or schedules, PHL can be a worthwhile alternative to the New York metropolitan airports.</p>
+          <p class="airport-use-note">Major commercial and international airport.</p>
+          <a class="text-link" href="https://www.phl.org/" target="_blank" rel="noopener noreferrer">Official PHL website <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">TTN</div>
+            <div class="airport-distance">Approx. 31 direct miles</div>
+          </div>
+          <h3>Trenton-Mercer Airport</h3>
+          <p>A smaller regional passenger airport in Mercer County. Its scale can make the airport simpler to navigate, although commercial schedules and destinations are much more limited than at EWR, JFK, LGA or PHL.</p>
+          <p class="airport-use-note">Regional passenger airport. Check current airline service directly.</p>
+          <a class="text-link" href="https://www.mercercounty.org/departments/transportation-and-infrastructure/trenton-mercer-airport" target="_blank" rel="noopener noreferrer">Official TTN resource <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">TEB</div>
+            <div class="airport-distance">Approx. 25 direct miles</div>
+          </div>
+          <h3>Teterboro Airport</h3>
+          <p>A prominent New York metropolitan business and general aviation airport in northern New Jersey. Teterboro is not a conventional scheduled-airline alternative to Newark, JFK or LaGuardia.</p>
+          <p class="airport-use-note">Business, private and general aviation.</p>
+          <a class="text-link" href="https://www.panynj.gov/airports/en/index.html" target="_blank" rel="noopener noreferrer">Port Authority airport information <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="airport-card">
+          <div class="airport-card-top">
+            <div class="airport-code">SWF</div>
+            <div class="airport-distance">Approx. 66 direct miles</div>
+          </div>
+          <h3>New York Stewart International Airport</h3>
+          <p>Located in the lower Hudson Valley, Stewart provides another regional passenger option north of New York City. Airline routes and frequencies can vary, so current service should be checked before planning around it.</p>
+          <p class="airport-use-note">Regional commercial airport with changing route availability.</p>
+          <a class="text-link" href="https://www.swfny.com/" target="_blank" rel="noopener noreferrer">Official SWF website <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="shell">
+      <div class="airport-distance-note" role="note">
+        <div class="kicker">Distance &amp; Travel Note</div>
+        <h2>Use mileage as context, not as a trip-time promise.</h2>
+        <p>The mileage shown on this page and map is approximate direct distance from North Edison for geographic comparison. Driving mileage can be materially longer, particularly to JFK, LaGuardia and Stewart, and actual travel time can change significantly with traffic, bridge and tunnel conditions, construction, weather, airport access patterns and the precise starting point within North Edison.</p>
+        <p>Flight schedules, airlines, terminals, parking, ground transportation and airport services can also change. Verify important travel details directly with the relevant airport, airline or transportation provider before departure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="shell airport-closing-grid">
+      <div>
+        <div class="kicker gold">Connected Beyond Edison</div>
+        <h2>One North Edison address. Multiple ways into the air network.</h2>
+        <p>North Edison combines proximity to Newark with access to the broader New York and Philadelphia aviation systems. That range can matter when comparing schedules, fares, international routes, regional service and business aviation.</p>
+        <div class="button-row">
+          <a class="button primary" href="location.html">Explore Location &amp; Access</a>
+          <a class="button outline" href="resources.html">Public Resources</a>
+        </div>
+      </div>
+      <div class="airport-closing-points" aria-label="Airport access summary">
+        <div><strong>4</strong><span>Major commercial airports: EWR, JFK, LGA and PHL</span></div>
+        <div><strong>2</strong><span>Regional passenger alternatives: TTN and SWF</span></div>
+        <div><strong>1</strong><span>Business aviation gateway: TEB</span></div>
+        <div><strong>7</strong><span>Airport options shown from North Edison</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
 <footer class="site-footer">
-<div class="shell footer-grid footer-grid-compact">
-<div class="footer-brand">
-<div class="footer-title">Village Pointe</div>
-<div class="footer-sub">Edison &amp; Beyond · Information hub</div>
-<p>An independent information hub centered on Village Pointe and Edison, with useful resources covering New Jersey, New York City, Philadelphia, regional travel, transportation, services, and everyday living. Information may change. Verify important details with the appropriate official source.</p>
-</div>
-<div class="footer-links">
-<h2>Explore</h2>
-<ul>
-<li><a href="community.html">Village Pointe</a></li>
-<li><a href="residents.html">Residents</a></li>
-<li><a href="directory.html">Directory</a></li>
-<li><a href="resources.html">Resources</a></li>
-<li><a href="airports.html">Airports</a></li>
-<li><a href="location.html">Edison</a></li>
-</ul>
-</div>
-</div>
-<div class="shell footer-legal">
-<p><strong>Independent Site.</strong> Not affiliated with Village Pointe Association, Board, or property management.</p>
-<p class="footer-copyright">© 2001–2026 VillagePointe.org. All rights reserved. <span class="footer-utility"><a href="contact.html">VP Contacts</a><span aria-hidden="true"> · </span><a href="legal.html">Legal</a></span></p>
-</div>
+  <div class="shell footer-grid footer-grid-compact">
+    <div class="footer-brand">
+      <div class="footer-title">Village Pointe</div>
+      <div class="footer-sub">Edison &amp; Beyond · Information hub</div>
+      <p>An independent information hub centered on Village Pointe and Edison, with useful resources covering New Jersey, New York City, Philadelphia, regional travel, transportation, services, and everyday living. Information may change. Verify important details with the appropriate official source.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="community.html">Village Pointe</a></li>
+        <li><a href="residents.html">Residents</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="airports.html">Airports</a></li>
+        <li><a href="location.html">Edison</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer-legal">
+    <p><strong>Independent Site.</strong> Not affiliated with Village Pointe Association, Board, or property management.</p>
+    <p class="footer-copyright">© 2001–2026 VillagePointe.org. All rights reserved. <span class="footer-utility"><a href="contact.html">VP Contacts</a><span aria-hidden="true"> · </span><a href="legal.html">Legal</a></span></p>
+  </div>
 </footer>
-<button aria-label="Back to top" class="back-to-top" data-back-to-top="" type="button">↑</button>
-<div aria-label="Image viewer" aria-modal="true" class="lightbox" data-lightbox="" hidden="" role="dialog"><button aria-label="Close image viewer" class="lightbox-close" data-lightbox-close="" type="button">×</button><img alt="" data-lightbox-image="" src=""/><p data-lightbox-caption=""></p></div>
-<script src="assets/js/site.js"></script></body></html>
+
+<button class="back-to-top" data-back-to-top="" type="button" aria-label="Back to top">↑</button>
+<div class="lightbox" data-lightbox="" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" data-lightbox-close="" type="button" aria-label="Close image viewer">×</button>
+  <img data-lightbox-image="" src="" alt=""/>
+  <p data-lightbox-caption=""></p>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
