@@ -1646,5 +1646,35 @@ window.VP_DIRECTORY_DATA = [
       "general aviation",
       "airport"
     ]
+  },
+  {
+    "title": "HVAC, Heating & Cooling Guide",
+    "category": "Home Services",
+    "type": "Village Pointe guide",
+    "scope": "resident",
+    "priority": 5,
+    "services": [
+      "HVAC sizing",
+      "Heating and cooling",
+      "Permits",
+      "Filters",
+      "Maintenance",
+      "Energy efficiency"
+    ],
+    "description": "Village Pointe and general homeowner guide to HVAC sizing, licensed installers, permits, efficiency, filters, humidity, maintenance, condenser care, rebates and replacement decisions.",
+    "url": "hvac-guide.html",
+    "label": "Read the HVAC guide",
+    "lastReviewed": "Current at the time of publication",
+    "searchTerms": [
+      "HVAC",
+      "heating",
+      "cooling",
+      "furnace",
+      "air conditioner",
+      "maintenance",
+      "permit",
+      "filters",
+      "energy"
+    ]
   }
 ];
