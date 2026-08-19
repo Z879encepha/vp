@@ -1061,6 +1061,58 @@ window.VP_DIRECTORY_DATA = [
     "searchTerms": []
   },
   {
+    "title": "Edison Recycling and Recycle Coach",
+    "category": "Government",
+    "type": "Official source",
+    "description": "Current Edison recycling calendar, Recycle Coach information, biweekly recycling guidance and holiday schedule references.",
+    "url": "https://www.edisonnj.org/departments/public_works/recycle_coach_calendar_app.php",
+    "label": "Open Recycle Coach",
+    "scope": "official",
+    "priority": 20,
+    "phones": ["732-248-7288"],
+    "services": ["Recycling", "Recycle Coach", "Recycling Calendar"],
+    "searchTerms": ["recycling", "recycle", "calendar", "section 10", "public works"]
+  },
+  {
+    "title": "Edison Construction Code Enforcement",
+    "category": "Government",
+    "type": "Official source",
+    "description": "Edison permit requirements, applications, inspections and Construction Code Enforcement contact information.",
+    "url": "https://www.edisonnj.org/departments/engineering_department/code_enforcement.php",
+    "label": "Open Code Enforcement",
+    "scope": "official",
+    "priority": 20,
+    "phones": ["732-248-7257"],
+    "services": ["Building Permits", "Construction Permits", "Inspections"],
+    "searchTerms": ["permit", "building permit", "construction", "code enforcement", "inspection"]
+  },
+  {
+    "title": "Edison Tax Assessor",
+    "category": "Government",
+    "type": "Official source",
+    "description": "Official Edison property assessment, tax-assessment records and deduction/exemption information.",
+    "url": "https://www.edisonnj.org/departments/finance/tax_assessor.php",
+    "label": "Open Tax Assessor",
+    "scope": "official",
+    "priority": 20,
+    "phones": ["732-248-7211"],
+    "services": ["Tax Assessor", "Property Assessment"],
+    "searchTerms": ["tax assessor", "assessment", "property tax", "tax records"]
+  },
+  {
+    "title": "Edison Water and Sewer",
+    "category": "Utilities",
+    "type": "Official source",
+    "description": "Township water and sewer information. Edison also provides a water-provider lookup because provider can vary by address.",
+    "url": "https://www.edisonnj.org/departments/water_and_sewer.php",
+    "label": "Open Water and Sewer",
+    "scope": "official",
+    "priority": 20,
+    "phones": ["732-248-6400"],
+    "services": ["Water", "Sewer", "Utility"],
+    "searchTerms": ["water", "sewer", "water provider", "Edison Water"]
+  },
+  {
     "title": "Edison Police Division",
     "category": "Emergency & Safety",
     "type": "Official source",
