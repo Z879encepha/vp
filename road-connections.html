@@ -10,8 +10,9 @@
 <meta property="og:description" content="Route 1, I-287, the Garden State Parkway and New Jersey Turnpike place North Edison within a powerful regional road network reaching New Jersey, New York, Pennsylvania and beyond."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://www.villagepointe.org/road-connections.html"/>
-<meta property="og:image" content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg"/>
+<meta property="og:image" content="http://www.villagepointe.org/assets/images/north-edison-four-highways.webp"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://www.villagepointe.org/assets/images/north-edison-four-highways.webp"/>
 <link rel="icon" href="favicon.ico"/>
 <link rel="apple-touch-icon" href="assets/images/icon-192.png"/>
 <link rel="manifest" href="site.webmanifest"/>
@@ -202,6 +203,32 @@
     margin-bottom: 0;
   }
 
+
+  .transport-visual-section {
+    padding: 0 0 72px;
+  }
+
+  .content-graphic {
+    margin: 0;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    box-shadow: 0 16px 38px rgba(13,37,30,.07);
+  }
+
+  .content-graphic img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-graphic figcaption {
+    margin: 12px 4px 0;
+    color: #667169;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
   .source-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -295,7 +322,7 @@
 
 <div class="status-strip" aria-label="Featured site announcement">
   <div class="shell status-strip-inner">
-    <a class="status-strip-link" href="airports.html">Connected Beyond Edison: Explore Airports, New York, Philadelphia and the Northeast.</a>
+    <a class="status-strip-link" href="location.html">Connected Beyond Edison: Explore Rail, Road, Air, New York, Philadelphia and the Northeast.</a>
   </div>
 </div>
 <div class="mosaic-band" aria-hidden="true"></div>
@@ -318,9 +345,7 @@
         <div class="nav-menu">
           <a href="community.html">Community</a>
           <a href="location.html">Location &amp; Access</a>
-          <a href="airports.html">Airports</a>
-          <a href="rail-connections.html">Rail Connections</a>
-          <a class="is-active" aria-current="page" href="road-connections.html">Road Connections</a>
+          <a href="airports.html">Airports</a><a href="rail-connections.html">Rail Connections</a><a class="is-active" aria-current="page" href="road-connections.html">Road Connections</a>
           <a href="homes.html">Homes &amp; Layouts</a>
           <a href="gallery.html">Views &amp; Beyond</a>
         </div>
@@ -361,7 +386,14 @@
     </div>
   </section>
 
-  <!-- Future graphic location: assets/images/north-edison-four-highways.webp -->
+  <section class="transport-visual-section" aria-label="Transportation graphic">
+    <div class="shell">
+      <figure class="content-graphic">
+        <img src="assets/images/north-edison-four-highways.webp" alt="Village Pointe infographic showing North Edison at the crossroads of U.S. Route 1, Interstate 287, the Garden State Parkway and the New Jersey Turnpike." width="1672" height="941" loading="lazy" decoding="async"/>
+        <figcaption>Four major corridors serve complementary roles around North Edison: Route 1 for the Central Jersey spine, I-287 for west and northwest connections, the Parkway for statewide north and south travel, and the Turnpike for the larger I-95 corridor.</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <section class="section alt-section" aria-labelledby="four-highways-heading">
     <div class="shell">
@@ -517,7 +549,14 @@
     </div>
   </section>
 
-  <!-- Future graphic location: assets/images/north-edison-road-reach.webp -->
+  <section class="transport-visual-section" aria-label="Transportation graphic">
+    <div class="shell">
+      <figure class="content-graphic">
+        <img src="assets/images/north-edison-road-reach.webp" alt="Village Pointe infographic showing regional road connections from North Edison toward the Jersey Shore, Poconos, Hudson Valley, Catskills, Adirondacks, Finger Lakes, Niagara Falls, Montreal, Philadelphia, Baltimore, Washington and Boston." width="1672" height="941" loading="lazy" decoding="async"/>
+        <figcaption>The nearby highway network connects into larger interstate systems across the Northeast. Exact routing and travel time depend on destination, traffic, weather, construction and current road conditions.</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <section class="section" aria-labelledby="south-heading">
     <div class="shell">
@@ -658,10 +697,8 @@
         <li><a href="residents.html">Residents</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="airports.html">Airports</a></li>
-        <li><a href="rail-connections.html">Rail Connections</a></li>
-        <li><a href="road-connections.html">Road Connections</a></li>
-        <li><a href="location.html">Edison</a></li>
+        <li><a href="airports.html">Airports</a></li><li><a href="rail-connections.html">Rail Connections</a></li><li><a href="road-connections.html">Road Connections</a></li>
+        <li><a href="location.html">Location &amp; Access</a></li>
       </ul>
     </div>
   </div>

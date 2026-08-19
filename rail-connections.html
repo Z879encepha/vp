@@ -10,8 +10,9 @@
 <meta property="og:description" content="Metropark and Edison place North Edison directly on the Northeast Corridor, with NJ Transit commuter service and Amtrak intercity connections across the Northeast."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://www.villagepointe.org/rail-connections.html"/>
-<meta property="og:image" content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg"/>
+<meta property="og:image" content="http://www.villagepointe.org/assets/images/metropark-northeast-corridor.webp"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://www.villagepointe.org/assets/images/metropark-northeast-corridor.webp"/>
 <link rel="icon" href="favicon.ico"/>
 <link rel="apple-touch-icon" href="assets/images/icon-192.png"/>
 <link rel="manifest" href="site.webmanifest"/>
@@ -168,9 +169,23 @@
     line-height: 1.7;
   }
 
+  .service-note {
+    padding: 25px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .service-note p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .transport-visual-section {
+    padding: 0 0 72px;
+  }
 
   .content-graphic {
-    margin: 26px 0 30px;
+    margin: 0;
     padding: 14px;
     background: #fff;
     border: 1px solid rgba(22,56,45,.12);
@@ -184,20 +199,10 @@
   }
 
   .content-graphic figcaption {
-    margin-top: 12px;
+    margin: 12px 4px 0;
     color: #667169;
     font-size: .9rem;
     line-height: 1.55;
-  }
-
-  .service-note {
-    padding: 25px 28px;
-    background: #f5f0e7;
-    border-left: 3px solid #aa7b35;
-  }
-
-  .service-note p:last-child {
-    margin-bottom: 0;
   }
 
   .source-grid {
@@ -326,7 +331,7 @@
 
 <div class="status-strip" aria-label="Featured site announcement">
   <div class="shell status-strip-inner">
-    <a class="status-strip-link" href="airports.html">Connected Beyond Edison: Explore Airports, New York, Philadelphia and the Northeast.</a>
+    <a class="status-strip-link" href="location.html">Connected Beyond Edison: Explore Rail, Road, Air, New York, Philadelphia and the Northeast.</a>
   </div>
 </div>
 <div class="mosaic-band" aria-hidden="true"></div>
@@ -349,9 +354,7 @@
         <div class="nav-menu">
           <a href="community.html">Community</a>
           <a href="location.html">Location &amp; Access</a>
-          <a href="airports.html">Airports</a>
-          <a class="is-active" aria-current="page" href="rail-connections.html">Rail Connections</a>
-          <a href="road-connections.html">Road Connections</a>
+          <a href="airports.html">Airports</a><a class="is-active" aria-current="page" href="rail-connections.html">Rail Connections</a><a href="road-connections.html">Road Connections</a>
           <a href="homes.html">Homes &amp; Layouts</a>
           <a href="gallery.html">Views &amp; Beyond</a>
         </div>
@@ -403,7 +406,14 @@
     </div>
   </section>
 
-  <!-- Future graphic location: assets/images/metropark-northeast-corridor.webp -->
+  <section class="transport-visual-section" aria-label="Transportation graphic">
+    <div class="shell">
+      <figure class="content-graphic">
+        <img src="assets/images/metropark-northeast-corridor.webp" alt="Village Pointe rail infographic showing Metropark on the Northeast Corridor with connections toward Washington, Baltimore, Wilmington, Philadelphia, Newark, New York, New Haven, Providence and Boston." width="1672" height="941" loading="lazy" decoding="async"/>
+        <figcaption>Metropark places the North Edison area directly on the Northeast Corridor, with NJ Transit regional service and selected Amtrak intercity service linking major Northeast and Mid Atlantic cities.</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <section class="section alt-section" aria-labelledby="metropark-heading">
     <div class="shell">
@@ -443,9 +453,9 @@
         <p>Both Metropark and Edison are on NJ Transit's Northeast Corridor Line, giving the North Edison area more than one station option for regional rail travel.</p>
       </div>
 
-      <figure class="content-graphic">
-        <img src="assets/images/nj-transit-northeast-corridor.webp" alt="NJ Transit Northeast Corridor infographic showing selected stations from North Edison: New York Penn Station, Newark Penn Station, Metropark, Metuchen, Edison and Trenton."/>
-        <figcaption>Selected NJ Transit Northeast Corridor stations most relevant to North Edison. Metropark, Metuchen and Edison provide convenient nearby access, with direct service north toward Newark Penn Station and New York Penn Station and south toward Trenton.</figcaption>
+      <figure class="content-graphic" style="margin-bottom:30px;">
+        <img src="assets/images/nj-transit-northeast-corridor.webp" alt="NJ Transit Northeast Corridor infographic showing selected stations from North Edison: New York Penn Station, Newark Penn Station, Metropark, Metuchen, Edison and Trenton." width="1672" height="941" loading="lazy" decoding="async"/>
+        <figcaption>Selected NJ Transit Northeast Corridor stations most relevant to North Edison. Metropark, Metuchen and Edison provide nearby station options, with service north toward Newark Penn Station and New York Penn Station and south toward Trenton.</figcaption>
       </figure>
 
       <div class="destination-bands">
@@ -493,7 +503,14 @@
     </div>
   </section>
 
-  <!-- Future graphic location: assets/images/metropark-rail-reach.webp -->
+  <section class="transport-visual-section" aria-label="Transportation graphic">
+    <div class="shell">
+      <figure class="content-graphic">
+        <img src="assets/images/metropark-rail-reach.webp" alt="Village Pointe infographic showing rail reach from Metropark through NJ Transit and Amtrak toward major Northeast cities and Pennsylvania connections." width="1672" height="941" loading="lazy" decoding="async"/>
+        <figcaption>Metropark functions as a local gateway to a much larger rail network. Selected services continue along the Northeast Corridor, while Pennsylvania destinations such as Harrisburg and Pittsburgh may depend on the train selected and, for Pittsburgh, a connection.</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <section class="section" aria-labelledby="pennsylvania-heading">
     <div class="shell">
@@ -640,10 +657,8 @@
         <li><a href="residents.html">Residents</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="airports.html">Airports</a></li>
-        <li><a href="rail-connections.html">Rail Connections</a></li>
-        <li><a href="road-connections.html">Road Connections</a></li>
-        <li><a href="location.html">Edison</a></li>
+        <li><a href="airports.html">Airports</a></li><li><a href="rail-connections.html">Rail Connections</a></li><li><a href="road-connections.html">Road Connections</a></li>
+        <li><a href="location.html">Location &amp; Access</a></li>
       </ul>
     </div>
   </div>
