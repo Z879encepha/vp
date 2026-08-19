@@ -1100,6 +1100,18 @@ window.VP_DIRECTORY_DATA = [
     "searchTerms": ["tax assessor", "assessment", "property tax", "tax records"]
   },
   {
+    "title": "Water Softener Guide - Test First",
+    "category": "Utilities",
+    "type": "VillagePointe.org guide",
+    "description": "Village Pointe and general homeowner guide to water hardness, water softeners, pros and cons, maintenance, space, permits, slippery-water considerations and treatment alternatives.",
+    "url": "water-softener-guide.html",
+    "label": "Read Water Softener Guide",
+    "scope": "curated",
+    "priority": 8,
+    "services": ["Water Softener", "Water Hardness", "Home Water Treatment"],
+    "searchTerms": ["water softener", "hard water", "soft water", "hardness", "Edison Water", "water treatment", "salt softener", "reverse osmosis"]
+  },
+  {
     "title": "Edison Water and Sewer",
     "category": "Utilities",
     "type": "Official source",
