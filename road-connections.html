@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Road Connections from North Edison | Village Pointe</title>
+<meta name="description" content="Explore major road connections from North Edison through Route 1, Interstate 287, the Garden State Parkway and New Jersey Turnpike, with regional access across New Jersey and the Northeast."/>
+<link rel="canonical" href="https://www.villagepointe.org/road-connections.html" />
+<meta property="og:title" content="Road Connections from North Edison | Village Pointe"/>
+<meta property="og:description" content="Route 1, I-287, the Garden State Parkway and New Jersey Turnpike place North Edison within a powerful regional road network reaching New Jersey, New York, Pennsylvania and beyond."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.villagepointe.org/road-connections.html"/>
+<meta property="og:image" content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="apple-touch-icon" href="assets/images/icon-192.png"/>
+<link rel="manifest" href="site.webmanifest"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/site.css"/>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YK50PPQBZ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YK50PPQBZ4');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8271030626326251" crossorigin="anonymous"></script>
+
+<style>
+  .transport-intro {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .transport-intro .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .highway-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .highway-card {
+    position: relative;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    box-shadow: 0 16px 38px rgba(13,37,30,.07);
+    overflow: hidden;
+  }
+
+  .highway-card::after {
+    content: "";
+    position: absolute;
+    right: -38px;
+    bottom: -38px;
+    width: 120px;
+    height: 120px;
+    border: 18px solid rgba(155,113,50,.07);
+    border-radius: 50%;
+  }
+
+  .highway-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 68px;
+    height: 48px;
+    padding: 0 14px;
+    margin-bottom: 18px;
+    border: 2px solid #193d32;
+    border-radius: 12px;
+    color: #193d32;
+    background: #fff;
+    font-weight: 800;
+    letter-spacing: .02em;
+  }
+
+  .highway-badge.toll {
+    border-radius: 5px 5px 18px 18px;
+    border-color: #9b7132;
+    color: #825a24;
+  }
+
+  .highway-card h3 {
+    margin-top: 0;
+  }
+
+  .highway-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .road-role {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(22,56,45,.1);
+    color: #6a726d;
+    font-size: .88rem;
+    font-weight: 600;
+  }
+
+  .regional-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .regional-card {
+    padding: 28px;
+    background: #fff;
+    border-top: 3px solid #9b7132;
+  }
+
+  .regional-card h3 {
+    margin: 0 0 10px;
+  }
+
+  .regional-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .route-chain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0 0;
+    color: #765323;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  .route-chain span {
+    padding: 7px 9px;
+    background: #f6f1e8;
+    border: 1px solid rgba(155,113,50,.2);
+  }
+
+  .route-chain i {
+    color: #9a9f9b;
+    font-style: normal;
+  }
+
+  .turnpike-feature {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .turnpike-copy,
+  .turnpike-facts {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+  }
+
+  .turnpike-facts {
+    background: linear-gradient(145deg, #102d27 0%, #173b33 100%);
+    color: #fff;
+  }
+
+  .turnpike-facts div + div {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.13);
+  }
+
+  .turnpike-facts strong {
+    display: block;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+  }
+
+  .turnpike-facts span {
+    color: rgba(255,255,255,.78);
+    line-height: 1.55;
+    font-size: .9rem;
+  }
+
+  .planning-note {
+    padding: 25px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .planning-note p:last-child {
+    margin-bottom: 0;
+  }
+
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .source-link {
+    display: block;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    text-decoration: none;
+  }
+
+  .source-link strong {
+    display: block;
+    color: #193d32;
+    margin-bottom: 5px;
+  }
+
+  .source-link span {
+    color: #667169;
+    font-size: .88rem;
+    line-height: 1.55;
+  }
+
+  .source-link:hover strong,
+  .source-link:focus strong {
+    color: #9b7132;
+  }
+
+  .transport-closing {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .transport-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .transport-facts div {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .transport-facts strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.3rem;
+  }
+
+  .transport-facts span {
+    color: rgba(255,255,255,.76);
+    font-size: .87rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 900px) {
+    .turnpike-feature,
+    .transport-closing {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .highway-grid,
+    .regional-grid,
+    .source-grid,
+    .transport-facts {
+      grid-template-columns: 1fr;
+    }
+
+    .highway-card,
+    .regional-card,
+    .turnpike-copy,
+    .turnpike-facts {
+      padding: 24px;
+    }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="status-strip" aria-label="Featured site announcement">
+  <div class="shell status-strip-inner">
+    <a class="status-strip-link" href="airports.html">Connected Beyond Edison: Explore Airports, New York, Philadelphia and the Northeast.</a>
+  </div>
+</div>
+<div class="mosaic-band" aria-hidden="true"></div>
+
+<header class="site-header" data-header="">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Village Pointe site home">
+      <span class="brand-logo"><img src="assets/images/village-pointe-logo.png" alt=""/></span>
+      <span class="brand-copy"><span class="brand-name">Village Pointe</span><span class="brand-sub">Edison &amp; Beyond</span></span>
+    </a>
+
+    <button class="menu-toggle" data-menu-toggle="" type="button" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" data-primary-nav="" id="primary-navigation" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle is-active" type="button" aria-expanded="false">Explore <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="community.html">Community</a>
+          <a href="location.html">Location &amp; Access</a>
+          <a href="airports.html">Airports</a>
+          <a href="rail-connections.html">Rail Connections</a>
+          <a class="is-active" aria-current="page" href="road-connections.html">Road Connections</a>
+          <a href="homes.html">Homes &amp; Layouts</a>
+          <a href="gallery.html">Views &amp; Beyond</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle" type="button" aria-expanded="false">Residents <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="residents.html">Resident Hub</a>
+          <a href="directory.html">Local Services</a>
+          <a href="resources.html">Public Resources</a>
+        </div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-notice" href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero" style="--page-image:url('assets/images/hero-walkway.webp')">
+    <div class="shell">
+      <div class="page-hero-copy">
+        <div class="kicker light">Road Connections</div>
+        <h1>Four major highways open the Northeast in every direction.</h1>
+        <p>Route 1, Interstate 287, the Garden State Parkway and the New Jersey Turnpike give North Edison an unusually broad road network, serving local Central New Jersey travel as well as long distance routes toward New York, the Jersey Shore, Pennsylvania, New England, upstate New York and the Mid Atlantic.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="transport-intro">
+        <div class="kicker">Four Roads, Four Different Roles</div>
+        <h2>The strength is not one highway. It is the network.</h2>
+        <p class="lead">North Edison's road access works because several major corridors intersect within the same Central New Jersey transportation system. Route 1 handles the local and regional spine. I-287 opens the west and northwest. The Garden State Parkway runs through New Jersey and into the New York Thruway system. The New Jersey Turnpike places the area on the larger I-95 East Coast corridor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future graphic location: assets/images/north-edison-four-highways.webp -->
+
+  <section class="section alt-section" aria-labelledby="four-highways-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">The Core Network</div>
+          <h2 id="four-highways-heading">Route 1. I-287. Garden State Parkway. New Jersey Turnpike.</h2>
+        </div>
+        <p>Each highway solves a different travel problem. Together they create a road network that reaches far beyond Edison.</p>
+      </div>
+
+      <div class="highway-grid">
+        <article class="highway-card">
+          <div class="highway-badge">US 1</div>
+          <h3>Route 1: Central New Jersey's local regional spine.</h3>
+          <p>U.S. Route 1 runs directly through Edison and links major commercial, employment and residential areas across Middlesex County. NJDOT describes the Edison to Woodbridge section as part of a critical transportation facility and has reconstructed the corridor between I-287 and the Garden State Parkway to improve capacity, traffic flow and safety.</p>
+          <p>For North Edison, Route 1 is the practical distributor. It connects with I-287 in Edison and continues south toward New Brunswick, the Princeton area and Trenton while also linking northward toward Woodbridge and the Parkway corridor.</p>
+          <div class="road-role">Primary role: local and regional Central New Jersey movement.</div>
+        </article>
+
+        <article class="highway-card">
+          <div class="highway-badge">I-287</div>
+          <h3>Interstate 287: the western and northwestern gateway.</h3>
+          <p>I-287 begins in the Edison area at the New Jersey Turnpike, Route 440 and I-287 interchange and runs north through Middlesex, Somerset and Morris counties. NJDOT identifies major connections along the corridor with Route 1, I-78 and I-80 before I-287 reaches the New York State line.</p>
+          <p>This makes I-287 particularly important when the destination does not lie on the New York to Philadelphia axis. It opens routes toward Bridgewater, Morristown, I-78, I-80, eastern Pennsylvania and the western side of the New York metropolitan region.</p>
+          <div class="road-role">Primary role: west, northwest and circumferential regional travel.</div>
+        </article>
+
+        <article class="highway-card">
+          <div class="highway-badge toll">GSP</div>
+          <h3>Garden State Parkway: New Jersey from north to south.</h3>
+          <p>The New Jersey Turnpike Authority identifies the Garden State Parkway as a 172 mile limited access toll road extending from the Cape May area to the New York state line at Montvale. It is one of the state's defining north south highways.</p>
+          <p>Southbound, the Parkway is the principal road corridor toward much of the Jersey Shore. Northbound, it runs toward Union, Essex, Passaic and Bergen counties and connects with the New York State Thruway system. Metropark itself sits directly off the Parkway at Exit 131A, creating an unusually useful road to rail interface.</p>
+          <div class="road-role">Primary role: statewide north south travel, Jersey Shore and New York State connection.</div>
+        </article>
+
+        <article class="highway-card">
+          <div class="highway-badge toll">NJTP</div>
+          <h3>New Jersey Turnpike: the East Coast interstate spine.</h3>
+          <p>The New Jersey Turnpike forms part of the I-95 corridor and is the major long distance road axis connecting the New York and Philadelphia metropolitan regions through New Jersey. Official Turnpike records identify Interchange 10 in Edison, near milepost 88.</p>
+          <p>Northbound, the Turnpike leads toward Newark, Newark Liberty International Airport and the greater New York region. Southbound, it leads toward the Philadelphia area and onward to Delaware, Maryland, Washington and the wider I-95 corridor.</p>
+          <div class="road-role">Primary role: long distance Northeast and Mid Atlantic travel.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="turnpike-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Two Statewide Toll Roads</div>
+          <h2 id="turnpike-heading">The Parkway and Turnpike complement each other.</h2>
+        </div>
+        <p>They are both operated by the New Jersey Turnpike Authority, but they serve different travel patterns.</p>
+      </div>
+
+      <div class="turnpike-feature">
+        <div class="turnpike-copy">
+          <h3>One road stays focused on New Jersey. The other plugs into I-95.</h3>
+          <p>The Garden State Parkway is especially powerful for movement within New Jersey, including the shore counties and the long north south path toward Bergen County and New York State.</p>
+          <p>The New Jersey Turnpike is the larger interstate route through the state. It is the natural road corridor for travel between the New York metropolitan region, Philadelphia and points farther south along the East Coast.</p>
+          <p>For North Edison, the advantage is having access to both systems rather than depending on one highway for every type of trip.</p>
+        </div>
+        <div class="turnpike-facts" aria-label="Parkway and Turnpike facts">
+          <div><strong>172 miles</strong><span>NJTA's stated length for the Garden State Parkway, from the Cape May area to the New York state line.</span></div>
+          <div><strong>Interchange 10</strong><span>The New Jersey Turnpike interchange located in Edison.</span></div>
+          <div><strong>Exit 131A</strong><span>NJ Transit identifies Metropark as directly off this Garden State Parkway exit.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="north-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">North</div>
+          <h2 id="north-heading">Hudson Valley, Catskills, Albany, Adirondacks and Montreal corridor.</h2>
+        </div>
+        <p>The Parkway's northern connection to New York's Thruway system turns a New Jersey highway into a gateway to a much larger regional network.</p>
+      </div>
+
+      <div class="regional-grid">
+        <article class="regional-card">
+          <h3>Garden State Parkway into the New York Thruway.</h3>
+          <p>The New York State Thruway Authority operates a dedicated Garden State Parkway Connector linking New Jersey's Parkway with the mainline Thruway, I-87, near Spring Valley. From there, I-87 runs north through the Hudson Valley toward Albany.</p>
+          <p>Official Thruway interchange listings identify New Paltz, Kingston, Saugerties and Catskill along this northbound corridor, making the Hudson Valley and Catskills part of the same highway network reached from the Parkway.</p>
+          <div class="route-chain"><span>GSP</span><i>→</i><span>NY Thruway I-87</span><i>→</i><span>Hudson Valley</span><i>→</i><span>Albany</span></div>
+        </article>
+
+        <article class="regional-card">
+          <h3>Lake George, Adirondacks and the Canadian border.</h3>
+          <p>At Albany, I-87 continues north as the Adirondack Northway toward Lake George, the Adirondacks, Plattsburgh and the Canadian border. North of the border, the road system continues toward Montreal.</p>
+          <p>This does not mean every trip should follow an identical route. Traffic and destination can change the best path. The point is the continuity of the northbound highway system from New Jersey into eastern New York and toward Quebec.</p>
+          <div class="route-chain"><span>I-87</span><i>→</i><span>Lake George</span><i>→</i><span>Adirondacks</span><i>→</i><span>Canada</span><i>→</i><span>Montreal</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="west-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">West &amp; Northwest</div>
+          <h2 id="west-heading">I-287 opens routes that bypass the New York to Philadelphia axis.</h2>
+        </div>
+        <p>Its value is less about one famous destination and more about how many east west interstates it connects.</p>
+      </div>
+
+      <div class="regional-grid">
+        <article class="regional-card">
+          <h3>I-78 and eastern Pennsylvania.</h3>
+          <p>Northbound I-287 intersects I-78 in Somerset County. That connection opens the Lehigh Valley and additional Pennsylvania routes to the west, while also serving major employment and commercial centers in Somerset and Morris counties.</p>
+          <div class="route-chain"><span>I-287</span><i>→</i><span>I-78</span><i>→</i><span>Western NJ</span><i>→</i><span>Pennsylvania</span></div>
+        </article>
+
+        <article class="regional-card">
+          <h3>I-80 and the Poconos.</h3>
+          <p>Farther north, I-287 intersects I-80. This creates a direct highway path toward the Delaware Water Gap and the Pocono region, while I-80 also continues west across Pennsylvania.</p>
+          <div class="route-chain"><span>I-287</span><i>→</i><span>I-80</span><i>→</i><span>Delaware Water Gap</span><i>→</i><span>Poconos</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="upstate-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Across New York State</div>
+          <h2 id="upstate-heading">Finger Lakes, Syracuse, Rochester, Buffalo and Niagara Falls.</h2>
+        </div>
+        <p>The New York Thruway connects the northbound I-87 corridor at Albany with the I-90 mainline across upstate New York.</p>
+      </div>
+
+      <div class="regional-grid">
+        <article class="regional-card">
+          <h3>I-90 across the center of New York.</h3>
+          <p>The Thruway Authority describes its 426 mile mainline as extending from the New York City region to Buffalo using I-87 and I-90. West of Albany, I-90 serves the Mohawk Valley, Syracuse and Rochester regions and provides access to the broader Finger Lakes area.</p>
+          <p>The exact exit and secondary road depend on the lake or town being visited, but the Thruway is the principal east west superhighway across this part of the state.</p>
+          <div class="route-chain"><span>I-87</span><i>→</i><span>Albany</span><i>→</i><span>I-90</span><i>→</i><span>Finger Lakes</span><i>→</i><span>Rochester</span></div>
+        </article>
+
+        <article class="regional-card">
+          <h3>Buffalo, Niagara Falls and Canada.</h3>
+          <p>At the western end of the state, the Thruway reaches Buffalo. The Authority's Niagara Thruway, I-190, connects from I-90 through Buffalo toward Niagara Falls and international crossings into Canada.</p>
+          <p>Again, this is a network description rather than a promise of the fastest route from North Edison on every day. Weather, construction and traffic can materially change the best path.</p>
+          <div class="route-chain"><span>I-90</span><i>→</i><span>Buffalo</span><i>→</i><span>I-190</span><i>→</i><span>Niagara Falls</span><i>→</i><span>Canada</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future graphic location: assets/images/north-edison-road-reach.webp -->
+
+  <section class="section" aria-labelledby="south-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">South</div>
+          <h2 id="south-heading">Jersey Shore on one axis. Philadelphia and Washington on another.</h2>
+        </div>
+        <p>The Parkway and Turnpike divide the southbound travel market neatly.</p>
+      </div>
+
+      <div class="regional-grid">
+        <article class="regional-card">
+          <h3>Garden State Parkway toward the shore.</h3>
+          <p>Southbound Parkway travel leads through Monmouth and Ocean counties and continues down the length of the state toward Atlantic and Cape May counties. For many Jersey Shore destinations, it is the defining highway corridor.</p>
+          <div class="route-chain"><span>GSP South</span><i>→</i><span>Monmouth</span><i>→</i><span>Ocean</span><i>→</i><span>South Jersey</span><i>→</i><span>Cape May</span></div>
+        </article>
+
+        <article class="regional-card">
+          <h3>New Jersey Turnpike toward Philadelphia and the Mid Atlantic.</h3>
+          <p>Southbound Turnpike travel links into the Philadelphia region and the larger I-95 network. From there, the interstate corridor continues through Delaware toward Baltimore, Washington and destinations farther south.</p>
+          <div class="route-chain"><span>NJ Turnpike</span><i>→</i><span>Philadelphia</span><i>→</i><span>Delaware</span><i>→</i><span>Baltimore</span><i>→</i><span>Washington</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="east-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">East &amp; Metropolitan Connections</div>
+          <h2 id="east-heading">The network also reaches Staten Island and the New York crossings.</h2>
+        </div>
+        <p>Several additional roads extend from the four principal corridors into the larger metropolitan system.</p>
+      </div>
+
+      <div class="regional-grid">
+        <article class="regional-card">
+          <h3>Route 440 and the Outerbridge Crossing.</h3>
+          <p>At the southern end of I-287 in Edison, New Jersey Route 440 continues east toward Perth Amboy and the Outerbridge Crossing. That creates a road connection toward Staten Island and, through New York's network, other boroughs and crossings.</p>
+        </article>
+
+        <article class="regional-card">
+          <h3>Turnpike connections toward the New York region.</h3>
+          <p>Northbound Turnpike travel provides access toward Newark, Jersey City connections, Lincoln and Holland Tunnel approaches through connecting roadways, and the northern Turnpike alignment toward the George Washington Bridge corridor.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rail-road-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Road Meets Rail</div>
+          <h2 id="rail-road-heading">Metropark is where the two systems visibly intersect.</h2>
+        </div>
+        <p>The area's road and rail advantages are not separate stories.</p>
+      </div>
+
+      <div class="turnpike-feature">
+        <div class="turnpike-copy">
+          <h3>Drive to the corridor, then leave the car behind.</h3>
+          <p>NJ Transit locates Metropark directly off Garden State Parkway Exit 131A. Drivers can approach through the regional road network, park at the station and continue by NJ Transit or Amtrak.</p>
+          <p>That combination matters for trips where driving all the way into New York, Philadelphia, Washington or another corridor city is less attractive than transferring to rail. It also gives travelers alternatives when congestion, parking or weather makes one mode less practical.</p>
+        </div>
+        <div class="turnpike-facts">
+          <div><strong>GSP 131A</strong><span>Direct Parkway access identified by NJ Transit for Metropark Station.</span></div>
+          <div><strong>NJ Transit</strong><span>Northeast Corridor commuter rail from the same station.</span></div>
+          <div><strong>Amtrak</strong><span>Selected intercity trains use Metropark, linking the road network to the Northeast Corridor.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="shell">
+      <div class="planning-note" role="note">
+        <div class="kicker">Road Planning Note</div>
+        <h2>Traffic changes the practical map.</h2>
+        <p>Highway proximity does not guarantee a fixed travel time. New Jersey traffic can vary significantly by hour, season, weather, construction, crashes and special events. NJDOT's 511NJ service provides real time conditions, incidents, construction information, cameras and travel times for state highways, the Garden State Parkway and the New Jersey Turnpike. Check current conditions before longer trips.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="official-sources-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Official Planning Resources</div>
+          <h2 id="official-sources-heading">Use current transportation sources before departure.</h2>
+        </div>
+        <p>These agencies provide roadway information, traffic conditions, toll road resources and regional network details.</p>
+      </div>
+
+      <div class="source-grid">
+        <a class="source-link" href="https://www.511nj.org/" target="_blank" rel="noopener noreferrer"><strong>511NJ Real Time Traffic ↗</strong><span>NJDOT traffic conditions, incidents, construction, cameras and travel times.</span></a>
+        <a class="source-link" href="https://www.nj.gov/transportation/" target="_blank" rel="noopener noreferrer"><strong>New Jersey Department of Transportation ↗</strong><span>State highway information, projects, traveler resources and official roadway references.</span></a>
+        <a class="source-link" href="https://www.njta.com/" target="_blank" rel="noopener noreferrer"><strong>New Jersey Turnpike Authority ↗</strong><span>Official information for the New Jersey Turnpike and Garden State Parkway.</span></a>
+        <a class="source-link" href="https://www.thruway.ny.gov/" target="_blank" rel="noopener noreferrer"><strong>New York State Thruway Authority ↗</strong><span>I-87, I-90, Garden State Parkway Connector, I-190 and statewide Thruway travel information.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="shell transport-closing">
+      <div>
+        <div class="kicker gold">Ground Connections: Road</div>
+        <h2>North Edison is connected in more than two directions.</h2>
+        <p>Route 1 handles Central New Jersey. I-287 opens the west and northwest. The Parkway runs toward the Jersey Shore and into New York State. The Turnpike joins the I-95 corridor toward New York, Philadelphia and Washington. Their combined value is a road network that can be entered close to North Edison and followed across much of the Northeast.</p>
+        <div class="button-row">
+          <a class="button primary" href="rail-connections.html">Explore Rail Connections</a>
+          <a class="button outline" href="airports.html">Explore Airports</a>
+        </div>
+      </div>
+      <div class="transport-facts" aria-label="Road connection summary">
+        <div><strong>US 1</strong><span>Central New Jersey local and regional spine</span></div>
+        <div><strong>I-287</strong><span>West, northwest, I-78 and I-80 access</span></div>
+        <div><strong>GSP</strong><span>Jersey Shore, northern New Jersey and New York State</span></div>
+        <div><strong>NJTP</strong><span>I-95 corridor toward New York, Philadelphia and the Mid Atlantic</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid footer-grid-compact">
+    <div class="footer-brand">
+      <div class="footer-title">Village Pointe</div>
+      <div class="footer-sub">Edison &amp; Beyond · Information hub</div>
+      <p>An independent information hub centered on Village Pointe and Edison, with useful resources covering New Jersey, New York City, Philadelphia, regional travel, transportation, services, and everyday living. Information may change. Verify important details with the appropriate official source.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="community.html">Village Pointe</a></li>
+        <li><a href="residents.html">Residents</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="airports.html">Airports</a></li>
+        <li><a href="rail-connections.html">Rail Connections</a></li>
+        <li><a href="road-connections.html">Road Connections</a></li>
+        <li><a href="location.html">Edison</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer-legal">
+    <p><strong>Independent Site.</strong> Not affiliated with Village Pointe Association, Board, or property management.</p>
+    <p class="footer-copyright">© 2001–2026 VillagePointe.org. All rights reserved. <span class="footer-utility"><a href="contact.html">VP Contacts</a><span aria-hidden="true"> · </span><a href="legal.html">Legal</a></span></p>
+  </div>
+</footer>
+
+<button class="back-to-top" data-back-to-top="" type="button" aria-label="Back to top">↑</button>
+<div class="lightbox" data-lightbox="" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" data-lightbox-close="" type="button" aria-label="Close image viewer">×</button>
+  <img data-lightbox-image="" src="" alt=""/>
+  <p data-lightbox-caption=""></p>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rail Connections from North Edison | Village Pointe</title>
+<meta name="description" content="Explore rail connections from North Edison through Metropark and Edison stations, including NJ Transit Northeast Corridor service and Amtrak access toward New York, Philadelphia, Washington, Boston and Pennsylvania."/>
+<link rel="canonical" href="https://www.villagepointe.org/rail-connections.html" />
+<meta property="og:title" content="Rail Connections from North Edison | Village Pointe"/>
+<meta property="og:description" content="Metropark and Edison place North Edison directly on the Northeast Corridor, with NJ Transit commuter service and Amtrak intercity connections across the Northeast."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.villagepointe.org/rail-connections.html"/>
+<meta property="og:image" content="http://www.villagepointe.org/assets/images/og-village-pointe.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="favicon.ico"/>
+<link rel="apple-touch-icon" href="assets/images/icon-192.png"/>
+<link rel="manifest" href="site.webmanifest"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/site.css"/>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YK50PPQBZ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YK50PPQBZ4');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8271030626326251" crossorigin="anonymous"></script>
+
+<style>
+  .transport-intro {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .transport-intro .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rail-corridor {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 34px;
+    padding: 34px 20px 8px;
+  }
+
+  .rail-corridor::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 44px;
+    height: 3px;
+    background: linear-gradient(90deg, #9b7132, #193d32, #9b7132);
+  }
+
+  .rail-stop {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .rail-stop::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 3px auto 14px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #193d32;
+    box-shadow: 0 0 0 2px #9b7132;
+  }
+
+  .rail-stop.metropark::before {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    background: #a87831;
+    box-shadow: 0 0 0 3px rgba(168,120,49,.22);
+  }
+
+  .rail-stop strong {
+    display: block;
+    color: #18382f;
+    font-size: .88rem;
+    line-height: 1.25;
+  }
+
+  .rail-stop span {
+    display: block;
+    margin-top: 3px;
+    color: #6b746f;
+    font-size: .72rem;
+    line-height: 1.3;
+  }
+
+  .rail-stop.metropark strong {
+    color: #8a6128;
+  }
+
+  .transport-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .transport-card {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    box-shadow: 0 16px 38px rgba(13,37,30,.07);
+  }
+
+  .transport-card.featured {
+    background: linear-gradient(145deg, #102d27 0%, #173b33 100%);
+    color: #fff;
+    border-color: rgba(201,162,88,.34);
+  }
+
+  .transport-card h3 {
+    margin-top: 0;
+  }
+
+  .transport-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .transport-card.featured h3,
+  .transport-card.featured .kicker {
+    color: #e2bd76;
+  }
+
+  .transport-card.featured p {
+    color: rgba(255,255,255,.82);
+  }
+
+  .destination-bands {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .destination-band {
+    padding: 24px;
+    background: #f6f1e8;
+    border-top: 3px solid #9b7132;
+  }
+
+  .destination-band h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+  }
+
+  .destination-band p {
+    margin: 0;
+    color: #5f6963;
+    font-size: .94rem;
+    line-height: 1.7;
+  }
+
+  .service-note {
+    padding: 25px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .service-note p:last-child {
+    margin-bottom: 0;
+  }
+
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .source-link {
+    display: block;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    text-decoration: none;
+  }
+
+  .source-link strong {
+    display: block;
+    color: #193d32;
+    margin-bottom: 5px;
+  }
+
+  .source-link span {
+    color: #667169;
+    font-size: .88rem;
+    line-height: 1.55;
+  }
+
+  .source-link:hover strong,
+  .source-link:focus strong {
+    color: #9b7132;
+  }
+
+  .transport-closing {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .transport-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .transport-facts div {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .transport-facts strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.3rem;
+  }
+
+  .transport-facts span {
+    color: rgba(255,255,255,.76);
+    font-size: .87rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 980px) {
+    .rail-corridor {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      row-gap: 28px;
+      padding-top: 10px;
+    }
+
+    .rail-corridor::before {
+      display: none;
+    }
+
+    .rail-stop::before {
+      margin-top: 0;
+    }
+
+    .destination-bands {
+      grid-template-columns: 1fr;
+    }
+
+    .transport-closing {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .transport-grid,
+    .source-grid,
+    .transport-facts,
+    .rail-corridor {
+      grid-template-columns: 1fr;
+    }
+
+    .rail-stop {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      column-gap: 12px;
+      text-align: left;
+      align-items: start;
+    }
+
+    .rail-stop::before,
+    .rail-stop.metropark::before {
+      grid-row: 1 / span 2;
+      margin: 3px 0 0;
+    }
+
+    .rail-stop strong,
+    .rail-stop span {
+      grid-column: 2;
+    }
+
+    .transport-card {
+      padding: 24px;
+    }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="status-strip" aria-label="Featured site announcement">
+  <div class="shell status-strip-inner">
+    <a class="status-strip-link" href="airports.html">Connected Beyond Edison: Explore Airports, New York, Philadelphia and the Northeast.</a>
+  </div>
+</div>
+<div class="mosaic-band" aria-hidden="true"></div>
+
+<header class="site-header" data-header="">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Village Pointe site home">
+      <span class="brand-logo"><img src="assets/images/village-pointe-logo.png" alt=""/></span>
+      <span class="brand-copy"><span class="brand-name">Village Pointe</span><span class="brand-sub">Edison &amp; Beyond</span></span>
+    </a>
+
+    <button class="menu-toggle" data-menu-toggle="" type="button" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" data-primary-nav="" id="primary-navigation" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle is-active" type="button" aria-expanded="false">Explore <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="community.html">Community</a>
+          <a href="location.html">Location &amp; Access</a>
+          <a href="airports.html">Airports</a>
+          <a class="is-active" aria-current="page" href="rail-connections.html">Rail Connections</a>
+          <a href="road-connections.html">Road Connections</a>
+          <a href="homes.html">Homes &amp; Layouts</a>
+          <a href="gallery.html">Views &amp; Beyond</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-link nav-group-toggle" type="button" aria-expanded="false">Residents <span aria-hidden="true">⌄</span></button>
+        <div class="nav-menu">
+          <a href="residents.html">Resident Hub</a>
+          <a href="directory.html">Local Services</a>
+          <a href="resources.html">Public Resources</a>
+        </div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-notice" href="legal.html">Legal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero" style="--page-image:url('assets/images/hero-walkway.webp')">
+    <div class="shell">
+      <div class="page-hero-copy">
+        <div class="kicker light">Rail Connections</div>
+        <h1>North Edison sits directly on the Northeast rail spine.</h1>
+        <p>Metropark and Edison stations connect the area to New York, Newark, Central New Jersey and Trenton, while Amtrak at Metropark opens the same corridor toward Philadelphia, Baltimore, Washington, New England and selected Pennsylvania destinations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="transport-intro">
+        <div class="kicker">A Rail Corridor with Regional Reach</div>
+        <h2>Commuter rail and intercity rail meet close to home.</h2>
+        <p class="lead">The rail advantage of North Edison is not simply that trains run to Manhattan. The area sits beside the Northeast Corridor, the passenger rail axis linking the major cities of the Northeast and Mid Atlantic. Metropark is particularly important because NJ Transit and Amtrak use the same station, allowing everyday regional travel and longer intercity trips to begin at one location.</p>
+      </div>
+
+      <div class="rail-corridor" aria-label="Selected Northeast Corridor destinations">
+        <div class="rail-stop"><strong>Boston</strong><span>Amtrak corridor</span></div>
+        <div class="rail-stop"><strong>Providence</strong><span>Rhode Island</span></div>
+        <div class="rail-stop"><strong>New Haven</strong><span>Connecticut</span></div>
+        <div class="rail-stop"><strong>New York</strong><span>Moynihan / Penn</span></div>
+        <div class="rail-stop metropark"><strong>Metropark</strong><span>North Edison area</span></div>
+        <div class="rail-stop"><strong>Philadelphia</strong><span>30th Street</span></div>
+        <div class="rail-stop"><strong>Baltimore</strong><span>Penn Station</span></div>
+        <div class="rail-stop"><strong>Washington</strong><span>Union Station</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future graphic location: assets/images/metropark-northeast-corridor.webp -->
+
+  <section class="section alt-section" aria-labelledby="metropark-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Metropark</div>
+          <h2 id="metropark-heading">The key rail gateway for North Edison.</h2>
+        </div>
+        <p>Metropark is both an NJ Transit Northeast Corridor station and an Amtrak intercity station. NJ Transit places it at 100 Middlesex Turnpike in Iselin, directly off Garden State Parkway Exit 131A.</p>
+      </div>
+
+      <div class="transport-grid">
+        <article class="transport-card featured">
+          <div class="kicker">NJ Transit</div>
+          <h3>Everyday movement along the Northeast Corridor.</h3>
+          <p>NJ Transit's Northeast Corridor Line connects Metropark northward with Rahway, Elizabeth, Newark and New York, and southward with New Brunswick, Princeton Junction, Hamilton and Trenton. Current schedules also show Northeast Corridor service through Newark Liberty International Airport station on many trips.</p>
+          <p>This makes Metropark useful for far more than a traditional rush hour commute. It can serve work trips, airport access, day trips, events in New York, travel to New Brunswick and Princeton area destinations, and connections farther south at Trenton.</p>
+        </article>
+
+        <article class="transport-card">
+          <div class="kicker">Amtrak</div>
+          <h3>Intercity rail without first going to Manhattan.</h3>
+          <p>Amtrak's Metropark station page identifies Acela, Northeast Regional, Keystone Service and long distance Northeast services among the routes associated with the station. Actual stopping patterns vary by train and day, so the practical value is not that every train stops at Metropark, but that selected intercity trains do.</p>
+          <p>A traveler can therefore begin many Northeast trips in the North Edison area rather than driving to New York, Newark or Philadelphia solely to board an intercity train.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="njt-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">NJ Transit Northeast Corridor</div>
+          <h2 id="njt-heading">New York in one direction. Central Jersey and Trenton in the other.</h2>
+        </div>
+        <p>Both Metropark and Edison are on NJ Transit's Northeast Corridor Line, giving the North Edison area more than one station option for regional rail travel.</p>
+      </div>
+
+      <div class="destination-bands">
+        <article class="destination-band">
+          <h3>North toward Newark and New York</h3>
+          <p>Metropark trains run toward Newark Penn Station and New York Penn Station, placing Midtown Manhattan on a direct commuter rail axis. Newark also provides connections to PATH, local transit and additional rail services.</p>
+        </article>
+        <article class="destination-band">
+          <h3>Newark Liberty Airport</h3>
+          <p>Many Northeast Corridor trains serve Newark Liberty International Airport station. Travelers should verify current AirTrain arrangements, construction impacts and airport access procedures before relying on a particular connection.</p>
+        </article>
+        <article class="destination-band">
+          <h3>South through Central New Jersey</h3>
+          <p>Southbound service links the area with New Brunswick, Princeton Junction, Hamilton and Trenton. At Trenton, passengers can continue into southeastern Pennsylvania using SEPTA or transfer to additional Amtrak services.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="amtrak-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Amtrak from Metropark</div>
+          <h2 id="amtrak-heading">The larger Northeast opens from a suburban station.</h2>
+        </div>
+        <p>Selected Amtrak trains stop at Metropark. Because schedules and stopping patterns change, the safest way to describe the station is as an entry point to the Amtrak Northeast network rather than as a guarantee of direct service on every route.</p>
+      </div>
+
+      <div class="transport-grid">
+        <article class="transport-card">
+          <div class="kicker">Northbound</div>
+          <h3>New York, Connecticut, Rhode Island and Boston.</h3>
+          <p>Amtrak's Northeast Corridor services connect New York with Stamford, New Haven, Providence, Route 128 and Boston. Current Acela timetables show selected trains stopping at Metropark and continuing north through the corridor. Northeast Regional service also links the major cities of the corridor, with individual stop patterns varying by train.</p>
+          <p>For North Edison, the significance is straightforward: Boston and southern New England are part of the same passenger rail system that passes through Metropark.</p>
+        </article>
+
+        <article class="transport-card">
+          <div class="kicker">Southbound</div>
+          <h3>Philadelphia, Wilmington, Baltimore and Washington.</h3>
+          <p>The Northeast Corridor continues south through Philadelphia's William H. Gray III 30th Street Station, Wilmington, Baltimore and Washington Union Station. Selected Acela and Northeast Regional services serving Metropark provide direct or one train access to major destinations on this axis, depending on the train chosen.</p>
+          <p>That gives Philadelphia and Washington a rail option that avoids driving the full I-95 corridor and places travelers at central city rail stations with onward local transit connections.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future graphic location: assets/images/metropark-rail-reach.webp -->
+
+  <section class="section" aria-labelledby="pennsylvania-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Across Pennsylvania</div>
+          <h2 id="pennsylvania-heading">Harrisburg can be reached on selected Keystone service. Pittsburgh requires a connection.</h2>
+        </div>
+        <p>This distinction matters. It keeps the page useful and avoids overstating what Metropark itself serves.</p>
+      </div>
+
+      <div class="transport-grid">
+        <article class="transport-card">
+          <div class="kicker">Keystone Service</div>
+          <h3>Philadelphia, Lancaster corridor and Harrisburg.</h3>
+          <p>Amtrak's Keystone Service operates between New York, Philadelphia and Harrisburg. Current 2026 timetables show Metropark on selected Keystone trains, but many Keystone trains bypass the station. Depending on the chosen service, travel west of Philadelphia can include Pennsylvania stops such as Paoli, Exton, Lancaster and Harrisburg.</p>
+          <p>Because Metropark stops are limited, the exact itinerary should always be checked before travel rather than assuming every Keystone train is available locally.</p>
+        </article>
+
+        <article class="transport-card">
+          <div class="kicker">Pennsylvanian</div>
+          <h3>Pittsburgh is in the network, but not as a direct Metropark stop.</h3>
+          <p>Amtrak's daily Pennsylvanian links New York and Pittsburgh through Philadelphia, Harrisburg, Altoona and other Pennsylvania communities. The current timetable lists Trenton and Newark but not Metropark.</p>
+          <p>For a North Edison traveler, Pittsburgh therefore requires an appropriate connection, potentially at Newark, Trenton, Philadelphia or another station depending on the itinerary. It is a useful rail option, but it should not be presented as a direct Metropark train.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section" aria-labelledby="edison-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Edison Station</div>
+          <h2 id="edison-heading">A second nearby Northeast Corridor station.</h2>
+        </div>
+        <p>Metropark is the stronger intercity gateway because Amtrak stops there, but Edison Station adds flexibility for NJ Transit travel.</p>
+      </div>
+
+      <div class="transport-grid">
+        <article class="transport-card">
+          <h3>NJ Transit service on the same corridor.</h3>
+          <p>NJ Transit identifies Edison Station as a Northeast Corridor station. Its trains operate on the same regional rail spine toward New Brunswick and Trenton to the south and toward Newark and New York to the north.</p>
+          <p>Depending on the starting point, parking situation, schedule and traffic on local roads, Edison can be a practical alternative to Metropark for NJ Transit trips.</p>
+        </article>
+        <article class="transport-card">
+          <h3>Different stations for different trips.</h3>
+          <p>For intercity Amtrak travel, Metropark is the clear local focus. For routine NJ Transit travel, both Edison and Metropark deserve consideration. This two station choice is another reason North Edison's rail access is more useful than a simple distance to New York might suggest.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="connections-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Beyond a Single Train</div>
+          <h2 id="connections-heading">Connections extend the practical rail map.</h2>
+        </div>
+        <p>The value of the Northeast Corridor grows further when major transfer points are considered.</p>
+      </div>
+
+      <div class="destination-bands">
+        <article class="destination-band">
+          <h3>New York</h3>
+          <p>Moynihan Train Hall and Penn Station connect with the New York City subway, Long Island Rail Road, NJ Transit and other local transportation. Amtrak's Empire Service also begins in New York for the Hudson Valley, Albany and destinations across upstate New York.</p>
+        </article>
+        <article class="destination-band">
+          <h3>Trenton and Philadelphia</h3>
+          <p>Trenton provides a connection between NJ Transit and SEPTA, while Philadelphia is a major Amtrak transfer point for Pennsylvania and long distance services.</p>
+        </article>
+        <article class="destination-band">
+          <h3>Washington and beyond</h3>
+          <p>Some Northeast Regional trains continue beyond Washington into Virginia. Whether a particular trip can be made on one train from Metropark depends on the selected service and current timetable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="shell">
+      <div class="service-note" role="note">
+        <div class="kicker">Planning Note</div>
+        <h2>Check the train, not just the route name.</h2>
+        <p>NJ Transit and Amtrak schedules change, and different trains on the same named route may make different stops. Amtrak service at Metropark is especially train specific. Before departure, verify the exact train, station stop, departure time, service alerts, parking information and any connection needed for the final destination.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="official-sources-heading">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Official Planning Resources</div>
+          <h2 id="official-sources-heading">Go directly to the transportation operators.</h2>
+        </div>
+        <p>These official resources provide current schedules, station information, real time departures and service advisories.</p>
+      </div>
+
+      <div class="source-grid">
+        <a class="source-link" href="https://www.njtransit.com/station/metropark-station" target="_blank" rel="noopener noreferrer"><strong>NJ Transit: Metropark Station ↗</strong><span>Station details, parking information, DepartureVision and Northeast Corridor service.</span></a>
+        <a class="source-link" href="https://www.njtransit.com/station/edison-station" target="_blank" rel="noopener noreferrer"><strong>NJ Transit: Edison Station ↗</strong><span>Station details and Northeast Corridor service information.</span></a>
+        <a class="source-link" href="https://www.amtrak.com/stations/met" target="_blank" rel="noopener noreferrer"><strong>Amtrak: Metropark, NJ ↗</strong><span>Amtrak station information, services and trip planning.</span></a>
+        <a class="source-link" href="https://www.amtrak.com/routes/northeast-regional-train" target="_blank" rel="noopener noreferrer"><strong>Amtrak: Northeast Regional ↗</strong><span>Route information for the Northeast Corridor and Virginia services.</span></a>
+        <a class="source-link" href="https://www.amtrak.com/routes/keystone-service-train.html" target="_blank" rel="noopener noreferrer"><strong>Amtrak: Keystone Service ↗</strong><span>New York, Philadelphia and Harrisburg route information.</span></a>
+        <a class="source-link" href="https://www.amtrak.com/home.html" target="_blank" rel="noopener noreferrer"><strong>Amtrak Trip Planning ↗</strong><span>Use the current booking system to confirm whether a specific train serves Metropark.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="shell transport-closing">
+      <div>
+        <div class="kicker gold">Ground Connections: Rail</div>
+        <h2>A suburban location with city center rail reach.</h2>
+        <p>Metropark brings commuter and intercity rail together near North Edison. Edison Station adds a second NJ Transit option. Together they place New York, Philadelphia and much of the Northeast Corridor within the same connected rail system, with onward routes reaching New England, Pennsylvania, Washington and beyond.</p>
+        <div class="button-row">
+          <a class="button primary" href="road-connections.html">Explore Road Connections</a>
+          <a class="button outline" href="airports.html">Explore Airports</a>
+        </div>
+      </div>
+      <div class="transport-facts" aria-label="Rail connection summary">
+        <div><strong>2</strong><span>Nearby Northeast Corridor station options: Metropark and Edison</span></div>
+        <div><strong>NJT + Amtrak</strong><span>Metropark combines regional commuter and intercity rail</span></div>
+        <div><strong>North</strong><span>New York, Connecticut, Rhode Island and Boston corridor</span></div>
+        <div><strong>South</strong><span>Philadelphia, Baltimore, Washington and connections beyond</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid footer-grid-compact">
+    <div class="footer-brand">
+      <div class="footer-title">Village Pointe</div>
+      <div class="footer-sub">Edison &amp; Beyond · Information hub</div>
+      <p>An independent information hub centered on Village Pointe and Edison, with useful resources covering New Jersey, New York City, Philadelphia, regional travel, transportation, services, and everyday living. Information may change. Verify important details with the appropriate official source.</p>
+    </div>
+    <div class="footer-links">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="community.html">Village Pointe</a></li>
+        <li><a href="residents.html">Residents</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="airports.html">Airports</a></li>
+        <li><a href="rail-connections.html">Rail Connections</a></li>
+        <li><a href="road-connections.html">Road Connections</a></li>
+        <li><a href="location.html">Edison</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer-legal">
+    <p><strong>Independent Site.</strong> Not affiliated with Village Pointe Association, Board, or property management.</p>
+    <p class="footer-copyright">© 2001–2026 VillagePointe.org. All rights reserved. <span class="footer-utility"><a href="contact.html">VP Contacts</a><span aria-hidden="true"> · </span><a href="legal.html">Legal</a></span></p>
+  </div>
+</footer>
+
+<button class="back-to-top" data-back-to-top="" type="button" aria-label="Back to top">↑</button>
+<div class="lightbox" data-lightbox="" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" data-lightbox-close="" type="button" aria-label="Close image viewer">×</button>
+  <img data-lightbox-image="" src="" alt=""/>
+  <p data-lightbox-caption=""></p>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
