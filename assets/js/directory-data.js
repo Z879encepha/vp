@@ -1100,6 +1100,18 @@ window.VP_DIRECTORY_DATA = [
     "searchTerms": ["tax assessor", "assessment", "property tax", "tax records"]
   },
   {
+    "title": "Home Safety & Prevention Guide",
+    "category": "Emergency & Safety",
+    "type": "VillagePointe.org guide",
+    "description": "Comprehensive attached-home guide to fire, smoke, hardwired alarms, sprinklers, carbon monoxide, natural gas, electrical hazards, water leaks, falls, kitchen safety, storms, outages and vacation preparation.",
+    "url": "home-safety-attached-community.html",
+    "label": "Read Home Safety Guide",
+    "scope": "curated",
+    "priority": 7,
+    "services": ["Home Safety", "Fire Safety", "Carbon Monoxide", "Gas Safety", "Electrical Safety", "Water Leak Prevention"],
+    "searchTerms": ["home safety", "fire", "smoke alarm", "sprinkler", "carbon monoxide", "CO alarm", "gas leak", "electrical", "water leak", "dryer vent", "falls", "storm", "power outage", "vacation"]
+  },
+  {
     "title": "Water Softener Guide - Test First",
     "category": "Utilities",
     "type": "VillagePointe.org guide",
