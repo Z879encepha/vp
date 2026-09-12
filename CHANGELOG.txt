@@ -1,0 +1,31 @@
+FINAL PACKAGE CHANGELOG
+
+index.html
+- Added Pest Prevention & Control to Residents menu.
+- Added pest-control reference to Resident Hub teaser.
+- Added Pest Control chip and Pest Control Guide button.
+- Added Pest Control footer link.
+- Added descriptive VP-logo alt text.
+
+residents.html
+- Updated metadata to include pest prevention/control.
+- Added Pest Prevention & Control to Residents menu.
+- Added pest prevention/control to Resident Hub hero.
+- Added Pest Prevention & Control to service navigation.
+- Added dedicated full-width pest-control resident card.
+- Added Pest Control footer link.
+- Added descriptive VP-logo alt text.
+
+pest-control.html
+- New long-form guide covering overall residential pest prevention/control.
+- Cockroaches remain the principal focus.
+- Includes exclusion, sanitation, food/water control, cardboard/storage, attic/garage guidance,
+  monitoring, cockroach allergen cleanup, attached-housing considerations, pesticide cautions,
+  targeted treatment guidance and official references.
+
+sitemap.xml
+- Includes the new pest-control.html page and the other root-level HTML pages discoverable
+  from the supplied current index/residents pages and new pest page.
+
+robots.txt / site.webmanifest
+- Preserved from current uploaded files.
