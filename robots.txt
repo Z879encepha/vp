@@ -1,6 +1,35 @@
+# VillagePointe.org
+# Public website: search and AI discovery
+
 User-agent: *
 Allow: /
-Disallow: /archive/
-Disallow: /indexufo.html
-Disallow: /indexvpo.html
-Sitemap: http://www.villagepointe.org/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.villagepointe.org/sitemap.xml
+•
