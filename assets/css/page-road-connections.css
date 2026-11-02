@@ -1,0 +1,284 @@
+/* CSS extracted from road-connections.html; preserves original selector cascade. */
+
+  .transport-intro {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .transport-intro .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .highway-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .highway-card {
+    position: relative;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    box-shadow: 0 16px 38px rgba(13,37,30,.07);
+    overflow: hidden;
+  }
+
+  .highway-card::after {
+    content: "";
+    position: absolute;
+    right: -38px;
+    bottom: -38px;
+    width: 120px;
+    height: 120px;
+    border: 18px solid rgba(155,113,50,.07);
+    border-radius: 50%;
+  }
+
+  .highway-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 68px;
+    height: 48px;
+    padding: 0 14px;
+    margin-bottom: 18px;
+    border: 2px solid #193d32;
+    border-radius: 12px;
+    color: #193d32;
+    background: #fff;
+    font-weight: 800;
+    letter-spacing: .02em;
+  }
+
+  .highway-badge.toll {
+    border-radius: 5px 5px 18px 18px;
+    border-color: #9b7132;
+    color: #825a24;
+  }
+
+  .highway-card h3 {
+    margin-top: 0;
+  }
+
+  .highway-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .road-role {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(22,56,45,.1);
+    color: #6a726d;
+    font-size: .88rem;
+    font-weight: 600;
+  }
+
+  .regional-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .regional-card {
+    padding: 28px;
+    background: #fff;
+    border-top: 3px solid #9b7132;
+  }
+
+  .regional-card h3 {
+    margin: 0 0 10px;
+  }
+
+  .regional-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .route-chain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0 0;
+    color: #765323;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  .route-chain span {
+    padding: 7px 9px;
+    background: #f6f1e8;
+    border: 1px solid rgba(155,113,50,.2);
+  }
+
+  .route-chain i {
+    color: #9a9f9b;
+    font-style: normal;
+  }
+
+  .turnpike-feature {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .turnpike-copy,
+  .turnpike-facts {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+  }
+
+  .turnpike-facts {
+    background: linear-gradient(145deg, #102d27 0%, #173b33 100%);
+    color: #fff;
+  }
+
+  .turnpike-facts div + div {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.13);
+  }
+
+  .turnpike-facts strong {
+    display: block;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+  }
+
+  .turnpike-facts span {
+    color: rgba(255,255,255,.78);
+    line-height: 1.55;
+    font-size: .9rem;
+  }
+
+  .planning-note {
+    padding: 25px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .planning-note p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .transport-visual-section {
+    padding: 0 0 72px;
+  }
+
+  .content-graphic {
+    margin: 0;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    box-shadow: 0 16px 38px rgba(13,37,30,.07);
+  }
+
+  .content-graphic img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-graphic figcaption {
+    margin: 12px 4px 0;
+    color: #667169;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .source-link {
+    display: block;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid rgba(22,56,45,.12);
+    text-decoration: none;
+  }
+
+  .source-link strong {
+    display: block;
+    color: #193d32;
+    margin-bottom: 5px;
+  }
+
+  .source-link span {
+    color: #667169;
+    font-size: .88rem;
+    line-height: 1.55;
+  }
+
+  .source-link:hover strong,
+  .source-link:focus strong {
+    color: #9b7132;
+  }
+
+  .transport-closing {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .transport-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .transport-facts div {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .transport-facts strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.3rem;
+  }
+
+  .transport-facts span {
+    color: rgba(255,255,255,.76);
+    font-size: .87rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 900px) {
+    .turnpike-feature,
+    .transport-closing {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .highway-grid,
+    .regional-grid,
+    .source-grid,
+    .transport-facts {
+      grid-template-columns: 1fr;
+    }
+
+    .highway-card,
+    .regional-card,
+    .turnpike-copy,
+    .turnpike-facts {
+      padding: 24px;
+    }
+  }
+

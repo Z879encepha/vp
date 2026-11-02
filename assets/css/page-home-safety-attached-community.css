@@ -1,0 +1,20 @@
+/* CSS extracted from home-safety-attached-community.html; preserves original selector cascade. */
+
+.article-hero{padding:66px 0 54px;background:linear-gradient(135deg,#f9f6ef 0%,#eef5f1 100%);border-bottom:1px solid rgba(25,61,50,.1)}
+.article-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center}
+.article-hero h1{max-width:930px;margin:.12em 0 .22em;font-size:clamp(3rem,5.8vw,5.4rem);line-height:.92;color:#153f33}
+.article-hero .lead{max-width:800px;font-size:1.14rem;line-height:1.76;color:#526159}
+.article-meta{display:flex;flex-wrap:wrap;gap:9px 18px;margin:20px 0 0;color:#7c694b;font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.article-verdict{padding:30px;background:#123b31;color:#fff;border:1px solid rgba(207,171,108,.55);box-shadow:0 18px 42px rgba(14,47,38,.12)}
+.article-verdict .kicker{color:#e4bd76}.article-verdict h2{margin:.18em 0 .45em;color:#fff;font-size:2.25rem}.article-verdict p{color:rgba(255,255,255,.84);line-height:1.7}.article-verdict strong{color:#f1cf8b}
+.article-shell{max-width:1120px;margin:0 auto}.article-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:start}.article-body{min-width:0}.article-body h2{margin:1.6em 0 .45em;color:#193d32;font-size:2.4rem}.article-body h3{margin:1.25em 0 .35em;color:#234c40;font-size:1.52rem}.article-body p,.article-body li{font-size:1.01rem;line-height:1.82;color:#4f5d56}.article-body ul,.article-body ol{padding-left:1.35rem}.article-body li+li{margin-top:.45em}
+.article-nav{position:sticky;top:106px;padding:23px;background:#f8f4ec;border:1px solid rgba(25,61,50,.12)}.article-nav h2{margin:0 0 12px;color:#193d32;font-size:1.45rem}.article-nav a{display:block;padding:7px 0;color:#44554d;text-decoration:none;font-size:.87rem;line-height:1.35}.article-nav a:hover,.article-nav a:focus{color:#956725}
+.fact-note,.safety-note,.source-note,.vp-rule{margin:28px 0;padding:22px 24px;border-left:4px solid #9b7132;background:#f6f1e8;color:#4c5953;line-height:1.75}.fact-note strong,.safety-note strong,.source-note strong,.vp-rule strong{color:#193d32}.safety-note{background:#fff5e5;border-left-color:#b26340}.safety-note strong{color:#7b3e2e}.vp-rule{background:#123b31;border-left-color:#dfb96e;color:rgba(255,255,255,.86)}.vp-rule strong{color:#f1cf8b}.vp-rule a{color:#f1cf8b}
+.article-figure{margin:34px 0}.article-figure img{display:block;width:100%;height:auto;border:1px solid rgba(25,61,50,.12);box-shadow:0 16px 38px rgba(13,37,30,.08)}.article-figure figcaption{margin-top:10px;color:#6b756f;font-size:.87rem;line-height:1.55}
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:26px 0}.compare-card{padding:25px;background:#fff;border:1px solid rgba(25,61,50,.12)}.compare-card.good{border-top:4px solid #47795d}.compare-card.caution{border-top:4px solid #a55b43}.compare-card h3{margin-top:0}.compare-card ul{margin-bottom:0}
+.priority-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0}.priority-card{padding:22px;background:#fff;border:1px solid rgba(25,61,50,.12)}.priority-card strong{display:block;color:#193d32;margin-bottom:6px}.priority-card p{margin:0;font-size:.92rem}
+.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}.source-list a{display:block;padding:15px 16px;background:#fff;border:1px solid rgba(25,61,50,.12);color:#193d32;text-decoration:none;font-size:.9rem;line-height:1.45}.source-list a:hover,.source-list a:focus{color:#916326;border-color:#c8a466}
+.share-card{margin-top:34px;padding:24px;background:#123b31;color:#fff}.share-card h3{margin-top:0;color:#f0cb84}.share-card p{color:rgba(255,255,255,.82)}
+@media(max-width:980px){.article-hero-grid,.article-layout{grid-template-columns:1fr}.article-nav{position:static;order:-1}.article-hero h1{font-size:clamp(3rem,10vw,4.8rem)}.priority-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.compare-grid,.source-list,.priority-grid{grid-template-columns:1fr}.article-hero{padding-top:48px}.article-body h2{font-size:2rem}}
+

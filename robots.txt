@@ -1,22 +1,16 @@
-# VillagePointe.org
-# Public website: search and AI discovery
-
+# VillagePointe.org: publicly crawlable community information
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
+# Search and AI assistants may fetch public pages subject to their policies.
+# OAI-SearchBot supports ChatGPT search discovery.
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: GPTBot
+User-agent: ChatGPT-User
 Allow: /
 
-User-agent: ChatGPT-User
+User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -28,8 +22,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
 Sitemap: https://www.villagepointe.org/sitemap.xml
-•

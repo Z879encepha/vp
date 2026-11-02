@@ -1,0 +1,211 @@
+/* CSS extracted from airports.html; preserves original selector cascade. */
+
+  .airport-map-wrap {
+    margin: 0;
+  }
+
+  .airport-map-frame {
+    background: #071725;
+    border: 1px solid rgba(179, 136, 63, .36);
+    box-shadow: 0 24px 60px rgba(5, 20, 31, .16);
+    overflow: hidden;
+  }
+
+  .airport-map-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .airport-map-wrap figcaption {
+    max-width: 980px;
+    margin: 14px auto 0;
+    color: #5d665f;
+    font-size: .9rem;
+    line-height: 1.65;
+    text-align: center;
+  }
+
+  .airport-overview {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .airport-overview .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .airport-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .airport-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid rgba(22, 56, 45, .12);
+    box-shadow: 0 16px 38px rgba(13, 37, 30, .07);
+  }
+
+  .airport-card.primary-airport {
+    grid-column: span 2;
+    background: linear-gradient(145deg, #102d27 0%, #173b33 100%);
+    color: #fff;
+    border-color: rgba(201, 162, 88, .34);
+  }
+
+  .airport-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  .airport-code {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2.15rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .04em;
+    color: #9b7132;
+  }
+
+  .primary-airport .airport-code {
+    color: #ddb86e;
+  }
+
+  .airport-distance {
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    border: 1px solid rgba(155, 113, 50, .34);
+    color: #775522;
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  .primary-airport .airport-distance {
+    border-color: rgba(221, 184, 110, .46);
+    color: #f0d9a8;
+  }
+
+  .airport-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .airport-card p {
+    margin-top: 0;
+  }
+
+  .airport-card .text-link {
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  .primary-airport .text-link {
+    color: #f0d9a8;
+  }
+
+  .airport-use-note {
+    margin-top: 12px;
+    color: #667169;
+    font-size: .9rem;
+  }
+
+  .primary-airport .airport-use-note {
+    color: rgba(255,255,255,.72);
+  }
+
+  .airport-distance-note {
+    padding: 24px 28px;
+    background: #f5f0e7;
+    border-left: 3px solid #aa7b35;
+  }
+
+  .airport-distance-note p:last-child {
+    margin-bottom: 0;
+  }
+
+  .airport-closing-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .airport-closing-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .airport-closing-points div {
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .airport-closing-points strong {
+    display: block;
+    color: #e1bb72;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+
+  .airport-closing-points span {
+    color: rgba(255,255,255,.76);
+    font-size: .88rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 980px) {
+    .airport-summary-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .airport-card.primary-airport {
+      grid-column: span 2;
+    }
+
+    .airport-closing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .airport-summary-grid,
+    .airport-closing-points {
+      grid-template-columns: 1fr;
+    }
+
+    .airport-card.primary-airport {
+      grid-column: auto;
+    }
+
+    .airport-card {
+      padding: 22px;
+    }
+
+    .airport-card-top {
+      gap: 12px;
+    }
+
+    .airport-code {
+      font-size: 1.9rem;
+    }
+
+    .airport-distance {
+      font-size: .7rem;
+    }
+  }
+

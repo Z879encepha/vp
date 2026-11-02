@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /archive/
+Disallow: /indexufo.html
+Disallow: /indexvpo.html
+Sitemap: http://www.villagepointe.org/sitemap.xml

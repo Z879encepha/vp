@@ -1,0 +1,24 @@
+# VillagePointe.org
+
+> An independent, unofficial informational website about Village Pointe in North Edison, New Jersey, including community information, resident resources and regional travel connections. It is not operated by or affiliated with the condominium association or management. Verify time-sensitive details with official providers.
+
+## Community and resident information
+- [About](https://www.villagepointe.org/about.html)
+- [Community](https://www.villagepointe.org/community.html)
+- [Resident Hub](https://www.villagepointe.org/residents.html)
+- [Public Resources](https://www.villagepointe.org/resources.html)
+- [Contact Information](https://www.villagepointe.org/contact.html)
+
+## Transportation and regional connections
+- [Airport Connections](https://www.villagepointe.org/airports.html)
+- [Rail Connections](https://www.villagepointe.org/rail-connections.html)
+- [Road Connections](https://www.villagepointe.org/road-connections.html)
+
+## Home and safety guides
+- [Pest Prevention and Control](https://www.villagepointe.org/pest-control.html)
+- [Home Safety](https://www.villagepointe.org/home-safety-attached-community.html)
+- [HVAC Guide](https://www.villagepointe.org/hvac-guide.html)
+- [Water Softener Guide](https://www.villagepointe.org/water-softener-guide.html)
+
+## Legal
+- [Notices, Privacy and Terms](https://www.villagepointe.org/legal.html)
