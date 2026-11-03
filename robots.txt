@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.villagepointe.org/sitemap.xml
+Sitemap: https://villagepointe.org/sitemap.xml
