@@ -1651,7 +1651,7 @@ window.VP_DIRECTORY_DATA = [
     "title": "HVAC, Heating & Cooling Guide",
     "category": "Home Services",
     "type": "Village Pointe guide",
-    "scope": "resident",
+    "scope": "curated",
     "priority": 5,
     "services": [
       "HVAC sizing",
